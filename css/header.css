@@ -1,0 +1,111 @@
+.top-bar {
+  height: 40px;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.top-bar .media-icon-container {
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 11px;
+}
+
+.top-bar .media-icon-wrapper {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 6.5px;
+}
+
+nav {
+  height: 161px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hamburger-menu-container {
+  width: 160px;
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.hamburger-menu span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #3e3e3e;
+  border: 0.5px solid #3e3e3e;
+  transform: translateY(-50%);
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.hamburger-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.main-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.main-nav-container .logo-container {
+  margin: 20px 0;
+}
+
+nav .main-nav {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .main-nav li {
+  margin: 0 25px;
+}
+
+nav .site-icon-container {
+  display: flex;
+  height: 100%;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+nav .site-icon-wrapper {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 2px;
+}
+
+header .product-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  color: #4f4f4f;
+  background-color: #d8d8d8;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+header .product-nav li {
+}

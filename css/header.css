@@ -24,15 +24,15 @@
 }
 
 nav {
-  height: 161px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas: "hamburgerMenu mainNav iconContainer";
   align-items: center;
   padding: 0 10px;
 }
 
 .hamburger-menu-container {
   width: 160px;
+  grid-area: hamburgerMenu;
 }
 
 .hamburger-menu {
@@ -66,6 +66,7 @@ nav {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  grid-area: mainNav;
 }
 
 .main-nav-container .logo-container {
@@ -74,7 +75,9 @@ nav {
 
 nav .main-nav {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
 }
 
 nav .main-nav li {
@@ -83,9 +86,11 @@ nav .main-nav li {
 
 nav .site-icon-container {
   display: flex;
+  justify-content: flex-end;
   height: 100%;
   padding-top: 20px;
   margin-right: 20px;
+  grid-area: iconContainer;
 }
 
 nav .site-icon-wrapper {
@@ -108,4 +113,10 @@ header .product-nav {
 }
 
 header .product-nav li {
+}
+
+@media screen and (max-width: 960px){
+    nav{
+        grid-template-areas: 'hamburgerMenu iconContainer' 'mainNav mainNav';
+    }
 }

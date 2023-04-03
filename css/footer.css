@@ -51,11 +51,12 @@ footer .footer-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 0 40px 0;
 }
 
 footer .footer-nav div {
-  margin: 0 80px 0 0;
+  margin: 20px 40px 0 0;
 }
 
 footer .footer-nav div:nth-child(3) {
@@ -70,6 +71,7 @@ footer .footer-nav h3 {
 
 footer .footer-nav ul {
   list-style-type: none;
+  padding: 0;
 }
 
 footer .footer-nav ul a {
@@ -102,4 +104,56 @@ footer .copyright-section {
   padding: 10px 0;
   font-size: 20px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1250px){
+    .footer-nav .quick-links,
+    .footer-nav .policies,
+    .footer-nav .payment-options{ 
+        width: 25%;
+    }
+
+    footer .footer-nav div:nth-child(3) {
+        margin: 0 20px 0 0;
+    }
+
+    .about-section .about-logo-container {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .usp-img-container .usp-img-wrapper {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .footer-nav .quick-links,
+    .footer-nav .policies,
+    .footer-nav .payment-options,
+    .footer-nav .contact{ 
+        width: 40%;
+    }
+
+    .about-section{
+        flex-wrap: wrap;
+    }
+
+    .about-section .about-logo-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .usp-img-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 809px){
+    .footer-nav .quick-links,
+    .footer-nav .policies,
+    .footer-nav .payment-options,
+    .footer-nav .contact{ 
+        width: 80%;
+    }
 }

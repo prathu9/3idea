@@ -78,10 +78,20 @@ nav .main-nav {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin: 0 0 10px 0;
 }
 
 nav .main-nav li {
   margin: 0 25px;
+}
+
+nav .main-nav li a{
+  text-decoration: none;
+  color: #000;
+}
+
+nav .main-nav li a.active{
+  font-weight: 800;
 }
 
 nav .site-icon-container {
@@ -112,7 +122,13 @@ header .product-nav {
   padding: 0 20px;
 }
 
-header .product-nav li {
+header .product-nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .product-nav li a.active{
+  font-weight: 800;
 }
 
 @media screen and (max-width: 960px){

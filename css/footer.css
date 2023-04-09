@@ -101,12 +101,8 @@ footer .footer-nav {
   width: 80%;
 }
 
-footer .footer-nav div {
+footer .footer-nav > div {
   margin: 20px 20px 0 20px;
-}
-
-footer .footer-nav div:nth-child(3) {
-  margin: 0 20px 0 0;
 }
 
 footer .footer-nav div:nth-child(3) ul{
@@ -127,6 +123,7 @@ footer .footer-nav ul {
 
 footer .footer-nav ul a {
   text-decoration: none;
+  font-size: 12px;
 }
 
 .footer-nav .payment-options ul {
@@ -138,14 +135,50 @@ footer .footer-nav ul a {
 }
 
 .footer-nav .payment-options ul li a {
-  display: inline-block;
-  width: 50px;
-  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
   border: 1px solid #cecece;
   border-radius: 2px;
+  overflow: hidden;
+  padding: 10px;
 }
 
-.footer-nav .contact li {
+.footer-nav .payment-options ul li:nth-child(2) a{
+  padding: 15px 0 0 5px;
+}
+
+.footer-nav .payment-options img{
+  width: 100%;
+}
+
+.footer-nav .contact > div{
+  display: flex;
+  margin: 0px;
+  gap:10px;
+  font-size: 12px;
+}
+.footer-nav .contact div div,
+.footer-nav .contact div ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav .contact div div{
+  width: 20%;
+  text-align: right;
+  margin: 0 10px 0 0;
+}
+
+.footer-nav .contact div ul{
+  width: 70%;
+  white-space: nowrap;
+}
+
+.footer-nav .contact div div span:nth-child(2){
+  margin-bottom: 13px;
 }
 
 footer .copyright-section {
@@ -162,10 +195,6 @@ footer .copyright-section {
     .footer-nav .policies,
     .footer-nav .payment-options{ 
         width: 25%;
-    }
-
-    footer .footer-nav div:nth-child(3) {
-        margin: 0 20px 0 0;
     }
 
     .about-section .about-logo-container {

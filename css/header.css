@@ -1,11 +1,16 @@
 .top-bar {
-  height: 40px;
+  height: 25px;
   color: #fff;
   background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+
+.top-bar h5{
+  font-size: 12px;
+  margin: 0;
 }
 
 .top-bar .media-icon-container {
@@ -37,8 +42,8 @@ nav {
 
 .hamburger-menu {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .hamburger-menu span {
@@ -46,7 +51,7 @@ nav {
   top: 50%;
   left: 0;
   display: block;
-  width: 50px;
+  width: 40px;
   height: 1px;
   background-color: #3e3e3e;
   border: 0.5px solid #3e3e3e;
@@ -75,14 +80,17 @@ nav {
 
 nav .main-nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
 }
 
 nav .main-nav li {
   margin: 0 25px;
+  font-size: 12px;
 }
 
 nav .main-nav li a{
@@ -92,13 +100,15 @@ nav .main-nav li a{
 
 nav .main-nav li a.active{
   font-weight: 800;
+  margin-bottom: 5px;
+  line-height: 10px;
 }
 
 nav .site-icon-container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   height: 100%;
-  padding-top: 20px;
   margin-right: 20px;
   grid-area: iconContainer;
 }
@@ -115,7 +125,8 @@ header .product-nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 40px;
+  height: 25px;
+  font-size: 12px;
   color: #4f4f4f;
   background-color: #d8d8d8;
   list-style-type: none;

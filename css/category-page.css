@@ -1,0 +1,81 @@
+.membership-banner{
+    height: 100px;
+    border: 1px solid #000;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.membership-banner button{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 20px 0 0;
+    padding: 20px 80px;
+    border: 20px;
+    color: #72858a;
+    background-color: #fffbe7;
+}
+
+main{
+    grid-template-columns: 350px auto;
+}
+
+.category-container .title-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    height: 100px;
+    background-color: #edebec;
+}
+
+.category-container .title-container h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.title-img-container{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: #fdd92c;
+}
+
+.best-seller-title,
+.new-release-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px 10px 0;
+}
+
+.best-seller-title h2,
+.new-release-title h2{
+    font-size: 20px;
+}
+
+.best-seller-opt,
+.new-release-opt{
+    display: flex;
+    column-gap:25px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
+}
+
+.opt-img{
+    width: 240px;
+    height: 240px;
+    background-color: #aaaaaa;
+}
+
+.category-container .banner-img{
+    background-color: #edebec;
+    height: 200px;
+    margin: 0 0 20px 0;
+}

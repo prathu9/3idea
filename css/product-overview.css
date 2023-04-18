@@ -50,6 +50,38 @@
   transform: translate(0, -50%);
 }
 
+.category-img img{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  width: 150%;
+  transform: translate(-50%, -50%);
+}
+
+.category-opt:nth-child(1) .category-img img{
+  top: 64%;
+}
+
+.category-opt:nth-child(3) .category-img img{
+  top: 58%;
+  width: 100%;
+}
+
+.category-opt:nth-child(4) .category-img img{
+  top: 49%;
+  left: 40%;
+}
+
+.category-opt:nth-child(5) .category-img img{
+  top: 49%;
+  left: 32%;
+}
+
+.category-opt:nth-child(7) .category-img img{
+  top: 49%;
+  left: 64%;
+}
+
 .category-caption {
   position: absolute;
   top: 50%;

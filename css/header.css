@@ -59,6 +59,7 @@ nav {
   position: relative;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .hamburger-menu span {
@@ -280,6 +281,73 @@ header .product-nav li a {
 
 header .product-nav li a.active{
   font-weight: 800;
+}
+
+.side-nav-overlay,
+.side-nav{
+  position: absolute;
+  top:0;
+}
+
+.side-nav-overlay{
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index:1000;
+}
+
+.side-nav-overlay.open{
+  width: 100%;
+}
+
+.side-nav{
+  width: 0;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: width 450ms ease-in;
+  z-index: 2000;
+}
+
+.side-nav h3{
+  color: #fff;
+  background-color: #2980B9;
+  padding: 10px;
+}
+
+.side-nav ul li{
+  padding: 13px 14px 13px 24px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.side-nav ul li:hover{
+  background-color: #EAEDF0;
+}
+
+.side-nav-overlay ~ .close-side-nav{
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  position: absolute;
+  top: 15px;
+  left: 320px;
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.side-nav-overlay.open ~ .close-side-nav{
+  display: block;
+}
+
+.side-nav-overlay.open ~ .side-nav{
+  width: 320px;
 }
 
 @media screen and (max-width: 960px){

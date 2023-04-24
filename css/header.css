@@ -292,7 +292,7 @@ header .product-nav li a.active{
 .side-nav-overlay{
   width: 0;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index:1000;
 }
 
@@ -314,12 +314,29 @@ header .product-nav li a.active{
 .side-nav h3{
   color: #fff;
   background-color: #2980B9;
-  padding: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.side-nav h3 svg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.side-nav h3 span{
+  display: inline-block;
+  font-weight: 100;
+  white-space: nowrap;
 }
 
 .side-nav ul li{
   padding: 13px 14px 13px 24px;
   font-size: 12px;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -328,22 +345,30 @@ header .product-nav li a.active{
 }
 
 .side-nav-overlay ~ .close-side-nav{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border: none;
   background: transparent;
   font-size: 32px;
   position: absolute;
   top: 15px;
-  left: 320px;
+  left: 330px;
   display: none;
   color: #fff;
   cursor: pointer;
   z-index: 2000;
 }
 
+.close-side-nav svg{
+  fill: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
 .side-nav-overlay.open ~ .close-side-nav{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side-nav-overlay.open ~ .side-nav{

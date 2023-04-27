@@ -1,0 +1,74 @@
+.main-content{
+    margin: 50px 0;
+}
+
+.service-banner img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.service-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.service-options .option{
+    min-width: 190px;
+    width: 190px;
+    height: 165px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-options .option:nth-child(1){
+    box-shadow: 7px 7px 0 1px #fada27, 7px 7px 0 2px #000;
+}
+
+.service-options .option:nth-child(2){
+    box-shadow: 7px 7px 0 1px #f49f35, 7px 7px 0 2px #000;
+}
+
+.service-options .option:nth-child(3){
+    box-shadow: 7px 7px 0 1px #e93b3c, 7px 7px 0 2px #000;
+}
+
+.service-options .option:nth-child(4){
+    box-shadow: 7px 7px 0 1px #54b3dc, 7px 7px 0 2px #000;
+}
+
+.service-options .option:nth-child(5){
+    box-shadow: 7px 7px 0 1px #316cac, 7px 7px 0 2px #000;
+}
+
+.service-options .option:nth-child(6){
+    box-shadow: 7px 7px 0 1px #003f84, 7px 7px 0 2px #000;
+}
+
+.service-options .option-icon{
+    width: 80px;
+}
+
+.service-options .option-icon img{
+    width: 100%;
+}
+
+.service-options h3{
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+.service-options .option:nth-child(2) .option-icon{
+    width: 120px;
+    margin: 0 0 10px 0;
+}
+
+

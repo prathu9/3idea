@@ -1,5 +1,5 @@
 .cover-container {
-  height: 420px;
+  height: 29vw;
   margin: 20px;
   display: flex;
 }
@@ -78,35 +78,36 @@
   position: absolute;
   bottom: 10%;
   left: 50%;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 50%;
+  height: 50%;
   color: #fff;
-  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2.5vw;
   font-weight: 700;
-  z-index: 10;
+  z-index: 50;
   white-space: nowrap;
-  transform: translate(-50%, 19%);
+  transform: translate(-50%, 23%);
   animation: moveBuyNow 1.5s 9s ease-in forwards;
 }
 
 @keyframes moveBuyNow {
   0% {
-    transform: translate(-50%, 19%) scale(1);
+    transform: translate(-50%, 23%) scale(1);
   }
   100% {
-    transform: translate(59%, -32%) scale(1.5);
+    transform: translate(52%, -32%)  scale(0.9);
   }
 }
-
 .buy-now .text {
+  position: absolute;
   animation: textScaleDown 1.5s 7s ease-in forwards;
 }
 
 .buy-now .circle {
+  top:45%;
   background-color: #ffbb1f;
-  width: 14px;
-  height: 14px;
+  width: 1vw;
+  height: 1vw;
   transform: scale(0);
   animation: scaleUpAndMove 1.5s 7s linear forwards;
 }
@@ -122,8 +123,8 @@
 
 .cover-box2 span.yellow-circle {
   background-color: #f49737;
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  aspect-ratio: 1/1;
   transform: translate(-50%, -50%) scale(0);
   animation: scaleUpAndMove 1.2s 500ms linear forwards,
     fadeOut 1s 7s ease-in forwards;
@@ -131,23 +132,23 @@
 
 .cover-box2 span.white-circle {
   background-color: #fff;
-  width: 21px;
-  height: 21px;
+  width: 4.7%;
+  aspect-ratio: 1/1;
   transform: translate(-50%, -50%) scale(0);
   animation: scaleUpAndMove 1.2s 1s linear forwards;
 }
 
 .cover-box2 span.dark-blue-circle,
 .cover-box2 span.light-yellow-circle {
-  width: 21px;
-  height: 21px;
+  width: 4.7%;
+  aspect-ratio: 1/1;
   transform: translate(-50%, -50%) scale(0);
 }
 
 .cover-box2 span.light-blue-circle,
 .cover-box2 span.dark-yellow-circle {
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  aspect-ratio: 1/1;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -172,7 +173,7 @@
 .cover-box2 span.light-yellow-circle {
   background-color: #ffbb1f;
   animation: scaleUpAndMove 1s 3.9s ease-in forwards,
-    scaleDown 1.5s 7s ease-in forwards, fadeOut 0.1s 9s ease-in forwards;
+    scaleDown 1.5s 7s ease-in forwards,  fadeOut 0.1s 9s ease-in forwards;
 }
 
 @keyframes scaleUpAndMove {
@@ -180,7 +181,7 @@
     transform: translate(-50%, -50%) scale(0);
   }
   100% {
-    transform: translate(-50%, -50%) scale(10);
+    transform: translate(-50%, -50%) scale(12);
   }
 }
 
@@ -264,64 +265,10 @@
 
 @keyframes scaleDown {
   0% {
-    transform: translate(-50%, -50%) scale(10);
+    transform: translate(-50%, -50%) scale(12);
   }
   100% {
-    transform: translate(-50%, -50%) scale(7);
+    transform: translate(-50%, -50%) scale(10);
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .cover-container {
-    transform: scale(0.95);
-  }
-
-  @keyframes moveBuyNow {
-    0% {
-      transform: translate(-50%, 19%) scale(1);
-    }
-    100% {
-      transform: translate(38%, -32%) scale(1.5);
-    }
-  }
-
-  .cover-box3 .dark-blue-circle,
-  .cover-box3 .red-circle,
-  .cover-box3 .light-blue-circle {
-    right: -55%;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .cover-container{
-    height: 400px;
-  }
-
-  .cover-box-container .buy-now {
-
-  }
-
-  @keyframes moveBuyNow {
-    0% {
-      transform: translate(-50%, 19%) scale(1);
-    }
-    100% {
-      transform: translate(30%, -32%) scale(1.2);
-    }
-  }
-
-  .cover-box3 .dark-blue-circle,
-  .cover-box3 .red-circle,
-  .cover-box3 .light-blue-circle {
-    bottom: -124%;
-    right: -58%;
-    width: 900px;
-    height: 900px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .cover-container {
-    transform: scale(0.95);
-  }
-}

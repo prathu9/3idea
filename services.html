@@ -128,41 +128,292 @@
             <img src="./asset/images/service_banner.png" alt="service banner" />
         </div>
         <div class="service-options">
-            <div class="option">
+            <div class="option" data-service-name="orders">
                 <div class="option-icon">
                     <img src="./asset/images/services/orders.svg" alt="orders icon" />
                 </div>
                 <h3>ORDERS</h3>
             </div>
-            <div class="option">
+            <div class="option" data-service-name="shipping">
                 <div class="option-icon">
                     <img src="./asset/images/services/shipping.png" alt="shipping icon" />
                 </div>
                 <h3>SHIPPING</h3>
             </div>
-            <div class="option">
+            <div class="option" data-service-name="payment">
                 <div class="option-icon">
                     <img src="./asset/images/services/payment.png" alt="payment icon" />
                 </div>
                 <h3>PAYMENT</h3>
             </div>
-            <div class="option">
+            <div class="option" data-service-name="returns">
                 <div class="option-icon">
                     <img src="./asset/images/services/return.png" alt="returns icon" />
                 </div>
                 <h3>RETURNS</h3>
             </div>
-            <div class="option">
+            <div class="option" data-service-name="rewards">
                 <div class="option-icon">
                     <img src="./asset/images/services/rewards.svg" alt="rewards icon" />
                 </div>
                 <h3>REWARDS</h3>
             </div>
-            <div class="option">
+            <div class="option" data-service-name="technical_help">
                 <div class="option-icon">
                     <img src="./asset/images/services/technical_help.png" alt="rewards icon" />
                 </div>
                 <h3>TECHNICAL HELP</h3>
+            </div>
+        </div>
+        <div class="service-options-faq">
+            <div class="faq-wrapper orders visible-service">
+                <h2>ORDERS</h2>
+                <ul>
+                    <li>
+                        <p class="faq-question">Do you accept Purchase Orders?</p>
+                        <p class="faq-answer">Yes, we do! Please contact us for more details.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            My organization is tax exempt. How do I place a tax exempt order?
+                        </p>
+                        <p class="faq-answer">
+                            To place a tax exempt order, please contact us via phone or email and we would be happy to
+                            assist you! We will require a copy of your resale certificate in order to make your purchase
+                            tax-exempt.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            I would like to input MatterHackers as a vendor and require a copy of your W-9 form. How can
+                            I do this?
+                        </p>
+                        <p class="faq-answer">
+                            We would be happy to provide you with a copy of our W-9. Please email us with your request
+                            at support@matterhackers.com and we will get that sent back to you as soon as possible!
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            How can I track my order?
+                        </p>
+                        <p class="faq-answer">
+                            Once your order has been processed for shipment, you will receive an email notification with
+                            any relevant tracking information. If you haven't received your tracking information for any
+                            reason, please contact us.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            When is the latest I can place my order for it to ship today?
+                        </p>
+                        <p class="faq-answer">
+                            For in-stock items (excluding freight), the cut-off for same-day shipment is 1 pm Pacific
+                            Time, Monday through Friday. Orders received after 1 pm or on the weekend, will be processed
+                            the following business day. For freight items, the cut-off for same-day shipment is 8 am
+                            Pacific Time, Monday through Friday.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            Can I change my order after it has been placed / Can I add or cancel an item?
+                        </p>
+                        <p class="faq-answer">
+                            If your order has not yet shipped and you would like to add or cancel an item off your
+                            order, please notify us immediately and we will do our best to accommodate your request.
+                            Please note that the cut-off for same-day shipment is 1 pm Pacific Time, Monday through
+                            Friday. Orders cancelled after they are shipped out and subsequently returned to sender will
+                            be refunded for their items less any relevant shipping charges.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            Do you offer gift cards?
+                        </p>
+                        <p class="faq-answer">
+                            Yes, we do! We currently offer gift cards in a variety of denominations, which you can view
+                            here. Currently, gift cards are only available electronically and will be delivered to you
+                            within one business day.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            Do you offer printing services or repair?
+                        </p>
+                        <p class="faq-answer">
+                            Yes! We offer both services. We can offer repairs for a variety of 3D printer brands and
+                            several types of filament for printing services. For more information, and to get a quote
+                            for your 3D printer repair or print service job, please email services@matterhackers.com.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            Can I purchase printed samples and/or filament samples?
+                        </p>
+                        <p class="faq-answer">
+                            Yes! You can order printed samples, depending on the filament and the machine you would like
+                            the sample printed with. If you would like more information or would like to request a print
+                            sample, please email services@matterhackers.com.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="faq-question">
+                            Can I order filament samples?
+                        </p>
+                        <p class="faq-answer">
+                            We currently do not offer filament samples.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-wrapper shipping">
+                <h2>SHIPPING</h2>
+                <ul>
+                    <li>
+                        <p class="faq-question">How does free shipping work?</p>
+                        <p class="faq-answer">Free shipping applies to any and all orders over $35*, shipping within the
+                            contiguous United States. Items over five pounds shipping to Alaska, Hawaii, Puerto Rico,
+                            and other US Territories will be subject to a shipping charge which will be calculated at
+                            checkout. *Items shipped via freight do not qualify for free shipping.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">How does In-Store Pickup work?</p>
+                        <p class="faq-answer">We offer free in-store pickup in our Orange County, CA showroom by
+                            appointment only. You can place your order online and select "in-store pickup" as your
+                            shipping option, then book an appointment to pick up your order. Please note that orders
+                            placed before 2 PM Pacific Time with in-store pickup selected will require a minimum of 2
+                            hours before they can be collected; however, for ALL order pick-ups an in-store appointment
+                            is required. If your order is placed after 2 PM, please schedule your pickup appointment for
+                            any available time on the following business day. Our showroom hours are 10 AM - 5 PM,
+                            Monday through Friday.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">When will I get my stuff?</p>
+                        <p class="faq-answer">We pride ourselves on fast shipping. If you order an in-stock item by 1:00
+                            pm Pacific Time it will ship the same day and, for U.S. orders, will normally take 2-3 days
+                            to arrive. Large items that require freight shipment usually arrive within approximately
+                            3-10 business days.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Where do you ship from, and which carriers do you use?</p>
+                        <p class="faq-answer">We ship from our distribution centers in Southern California and
+                            Pennsylvania, and ship packages via FedEx and USPS Priority Mail.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Can I upgrade my order to expedited shipping? / Can I ship my order on
+                            my own account?</p>
+                        <p class="faq-answer">Yes, we can assist you with an upgrade to expedited shipping! To do this,
+                            please contact us directly at +1 (800) 613-4290 or support@matterhackers.com during regular
+                            business hours, and we will be glad to provide you with a shipping quote or take your
+                            carrier account number.</p>
+                        <p class="faq-answer">If you would like us to ship collect on your account, please call us
+                            directly at +1 (800) 613-4290 or provide us with your carrier account number (FedEx, UPS,
+                            DHL, etc.) via email at support@matterhackers.com.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Do you ship internationally?</p>
+                        <p class="faq-answer">We currently only ship to locations within the US and Canada (non-freight
+                            items only). It is recommended that customers wishing to purchase and have goods delivered
+                            to other countries utilize a freight forwarding service such as https://www.myus.com/ or
+                            https://www.shipito.com/. We are happy to ship your items for free to any US address. For
+                            orders shipping to Canada or internationally via a freight courier, duties, taxes and import
+                            fees are not included and are the responsibility of the customer.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-wrapper payment">
+                <h2>PAYMENT</h2>
+                <ul>
+                    <li>
+                        <p class="faq-question">What methods of payment can I use?</p>
+                        <p class="faq-answer">We accept Visa, MasterCard, Discover, and American Express, as well as
+                            Paypal. We provide financing options through Affirm (see below), and accept purchase orders
+                            from qualified businesses, government entities, and educational institutions.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Do you provide options for financing?</p>
+                        <p class="faq-answer">Yes, we offer financing through an external company called Affirm. To see
+                            if you qualify, click on the “Affirm” link during the checkout process and you will be taken
+                            to their external website. If you qualify for their financing program, you will be sent back
+                            to the MatterHackers site where you can complete your order.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Do you offer a customer loyalty program?</p>
+                        <p class="faq-answer">Yes! The MatterHackers Rewards Program is a free program offering you 3%
+                            back on all qualifying purchases. You can sign up for the program and find out more details
+                            here.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Will you charge sales tax on my order?</p>
+                        <p class="faq-answer">We currently charge sales tax on orders shipping to a number of states. If
+                            you are shipping to a taxable location, you will see taxes added to your total during
+                            checkout. If you are tax-exempt, please contact us directly to place your order (we will
+                            require a valid resale or tax exemption certificate).</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">How do I use my MatterHackers Gift Card?</p>
+                        <p class="faq-answer">Each MatterHackers gift card will come with a code valid for the entire
+                            amount of the gift card. You can apply this code in the discount code box during checkout.
+                            Please note that gift card codes are one-time use only - if you do not use the full amount
+                            of the card in one transaction, please contact us with your order number and we will be
+                            happy to provide you with a new code for the remaining balance.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-wrapper returns">
+                <h2>RETURNS</h2>
+                <ul>
+                    <li>
+                        <p class="faq-question">Do you accept returns?</p>
+                        <p class="faq-answer">You can read our full return policy here.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">I accidentally ordered the wrong size/item. Can I exchange the item I
+                            ordered?</p>
+                        <p class="faq-answer">Yes! To obtain an RMA number for your exchange, please contact us at
+                            support@matterhackers.com.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">I need to send my printer to you, and no longer have the original
+                            packaging. Can I get replacement packaging?</p>
+                        <p class="faq-answer">We highly encourage you to keep your printer’s original packaging for at
+                            least the length of its warranty period.</p>
+                        <p class="faq-answer">Any printer coming back in for repair or return must be shipped in its
+                            original packaging to ensure its safety. If you no longer have your original packaging,
+                            please let us know and we can assist you with purchasing replacement packaging. Any printer
+                            returning to us without its original packaging will be charged for the full cost of the
+                            replacement packaging, along with any additional fees for resulting damage incurred through
+                            improper shipment.</p>
+                    </li>
+                    <li>
+                        <p class="faq-question">Do you offer price adjustments?</p>
+                        <p class="faq-answer">If you purchase a product from MatterHackers within five days prior to a
+                            sale, we will happily issue you a store credit for the difference between your purchase
+                            price and the sale price.</p>
+                        <p class="faq-answer">Please keep in mind that you must have bought the item no more than 5 days
+                            before the sale occurred to be eligible.</p>
+                        <p class="faq-answer">To obtain your store credit, please email a copy of your original receipt
+                            to support@matterhackers.com with a note stating that you would like to receive a credit for
+                            an item that is now on sale.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-wrapper rewards">
+                <h2>REWARDS</h2>
+                <ul>
+                    <li>
+                        <p class="faq-question">Do you offer a Rewards Program?</p>
+                        <p class="faq-answer">Yes, we do! The MatterHackers Rewards Program is a FREE program that
+                            allows you to earn an unlimited 3% back on what you spend. Check out the details here.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-wrapper technical_help">
+                <h2>TECHNICAL HELP</h2>
+                <ul>
+                    <li>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
@@ -294,6 +545,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/services.js"></script>
 </body>
 
 </html>

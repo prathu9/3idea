@@ -180,7 +180,7 @@
 }
 
 .blank-img-box {
-  width: 250px;
+  width: 100%;
   height: 250px;
   border: 1px solid #000;
   border-radius: 25px;
@@ -253,3 +253,36 @@
   margin: 0 0 40px 0;
 }
 
+@media screen and (max-width: 768px){
+  .client-list-container .title-container h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .banner-section{
+    grid-template-areas:
+    "banner1"
+    "banner2"
+    "banner3";
+  }
+
+  .banner-section div,
+  .banner-section div:nth-child(3) {
+    height: initial;
+  }
+
+  .mobile-app-banner .banner-container {
+    margin: 20px 10px;
+  }
+
+  .mobile-app-banner .banner-container h1 {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 346px){
+  .client-list-container .title-container h3 {
+    font-size: 12px;
+  }
+}

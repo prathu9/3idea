@@ -197,9 +197,9 @@
 .cover-box3 .red-circle,
 .cover-box3 .light-blue-circle {
   bottom: -138%;
-  right: -45%;
-  width: 1000px;
-  height: 1000px;
+  right: -50%;
+  width: 69.1vw;
+  height: 69.1vw;
   position: absolute;
   border-radius: 50%;
 }
@@ -227,22 +227,22 @@
 .cover-box3 .light-pink-circle,
 .cover-box3 .blue-circle {
   position: absolute;
-  top: -194%;
-  right: -113%;
-  width: 2500px;
-  height: 2500px;
+  top: -30%;
+  right: -146%;
+  width: 100vw;
+  height: 100vw;
   border-radius: 50%;
-  transform: scale(0);
+  transform: scale(1);
 }
 
 .cover-box3 .light-pink-circle {
   background-color: #d27373;
-  animation: scaleUp 1s 2s ease-in forwards;
+  animation: scaleUpLeft 1s 2s ease-in forwards;
 }
 
 .cover-box3 .blue-circle {
   background-color: #3461a2;
-  animation: scaleUp 1s 3.5s ease-in forwards;
+  animation: scaleUpLeft 1s 3.5s ease-in forwards;
 }
 
 @keyframes scaleUp {
@@ -251,6 +251,15 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes scaleUpLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-75%, -20%);
   }
 }
 

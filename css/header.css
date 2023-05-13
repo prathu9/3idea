@@ -334,10 +334,22 @@ header .product-nav li a.active{
 }
 
 .side-nav ul li{
-  padding: 13px 14px 13px 24px;
   font-size: 12px;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.side-nav ul li a{
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 13px 14px 13px 24px;
+}
+
+.side-nav ul li a.active{
+  background-color: #EAEDF0;
 }
 
 .side-nav ul li:hover{
@@ -372,11 +384,52 @@ header .product-nav li a.active{
 }
 
 .side-nav-overlay.open ~ .side-nav{
-  width: 320px;
+  min-width: 320px;
+}
+
+.side-nav .mob-nav{
+   display: none;
 }
 
 @media screen and (max-width: 960px){
     nav{
         grid-template-areas: 'hamburgerMenu iconContainer' 'mainNav mainNav';
     }
+}
+
+@media screen and (max-width: 640px){
+  .top-bar .media-icon-container{
+    margin-right: 0;
+  }
+  nav .site-icon-container{
+    margin-right: 0;
+  }
+  nav .main-nav{
+    display: none;
+  }
+
+  header .product-nav{
+    display: none;
+  }
+
+  .side-nav .mob-nav{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 371px){
+  .side-nav-overlay.open ~ .side-nav{
+    width: 80%;
+    min-width: 200px;
+  }
+
+  .side-nav-overlay ~ .close-side-nav {
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 254px){
+  .side-nav-overlay ~ .close-side-nav {
+    left: 210px;
+  }
 }

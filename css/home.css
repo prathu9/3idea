@@ -8,20 +8,23 @@
 }
 
 .shop-by-purpose-container .button-container {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin: 40px 0;
 }
 
 .shop-by-purpose-container .button-container button {
-  width: 350px;
+  width: 320px;
   height: 50px;
   background-color: #54b3dc;
   color: #fff;
   border-radius: 5px;
   border: none;
   font-size: 12px;
-  margin: 0 45px 0 0;
+  /* margin: 0 45px 0 0; */
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0 15px 0 0 #316cac;
@@ -177,7 +180,7 @@
 }
 
 .blank-img-box {
-  width: 250px;
+  width: 100%;
   height: 250px;
   border: 1px solid #000;
   border-radius: 25px;
@@ -233,8 +236,28 @@
   grid-area: banner2;
 }
 
-.banner-img-3 {
+.banner-img-3{
   grid-area: banner3;
+  position: relative;
+}
+
+.banner-img-3 .design-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  background: url(../asset/images/3d-design-button.png) center/contain no-repeat;
+  width: 10vw;
+  aspect-ratio: 4/1.35;
+  transform: translate(-25%, -20%);
+  box-shadow: 5px 5px 0 0 #aaaaaa;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.banner-img-3 .design-btn:active{
+  box-shadow: 0 0 0 0 #aaaaaa;
+  transform: translate(-22%, -12%);
 }
 
 .banner-section img {
@@ -250,3 +273,36 @@
   margin: 0 0 40px 0;
 }
 
+@media screen and (max-width: 768px){
+  .client-list-container .title-container h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .banner-section{
+    grid-template-areas:
+    "banner1"
+    "banner2"
+    "banner3";
+  }
+
+  .banner-section div,
+  .banner-section div:nth-child(3) {
+    height: initial;
+  }
+
+  .mobile-app-banner .banner-container {
+    margin: 20px 10px;
+  }
+
+  .mobile-app-banner .banner-container h1 {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 346px){
+  .client-list-container .title-container h3 {
+    font-size: 12px;
+  }
+}

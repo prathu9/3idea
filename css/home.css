@@ -290,15 +290,6 @@
   .banner-section div:nth-child(3) {
     height: initial;
   }
-
-  .mobile-app-banner .banner-container {
-    margin: 20px 10px;
-  }
-
-  .mobile-app-banner .banner-container h1 {
-    font-size: 1.2rem;
-    margin-left: 20px;
-  }
 }
 
 @media screen and (max-width: 346px){

@@ -60,6 +60,11 @@
     user-select: none;
 }
 
+.service-options .option.active{
+    box-shadow: 0 0 0 0 #000;
+    transform: translate(8px, 8px);
+}
+
 .service-options .option-icon{
     width: 80px;
 }

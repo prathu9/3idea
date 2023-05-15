@@ -300,8 +300,15 @@ header .product-nav li a.active{
   width: 100%;
 }
 
+.side-menu-container{
+  transform: translate(0);
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+
 .side-nav{
-  width: 0;
+  visibility: hidden;
+  min-width: 320px;
   height: 100%;
   top:0;
   left:0;
@@ -309,6 +316,14 @@ header .product-nav li a.active{
   overflow-y: auto;
   transition: width 450ms ease-in;
   z-index: 2000;
+  transform: translateX(-100%);
+  transition: all 250ms ease-in;
+  user-select: none;
+}
+
+.side-nav-overlay.open ~ .side-nav{
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .side-nav h3{
@@ -339,13 +354,17 @@ header .product-nav li a.active{
   cursor: pointer;
 }
 
-.side-nav ul li a{
+.side-nav ul li a,
+.side-nav ul li > span{
   text-decoration: none;
   color: #000;
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 13px 14px 13px 24px;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
 .side-nav ul li a.active{
@@ -353,6 +372,26 @@ header .product-nav li a.active{
 }
 
 .side-nav ul li:hover{
+  background-color: #EAEDF0;
+}
+
+.side-menu-option .sub-side-menu{
+  position: absolute;
+  top:0;
+  left:100%;
+  display: none;
+  width: 100%;
+}
+
+.side-menu-back-btn{
+  padding: 14px 24px;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  user-select: none;
+}
+
+.side-menu-back-btn:hover{
   background-color: #EAEDF0;
 }
 
@@ -381,10 +420,6 @@ header .product-nav li a.active{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.side-nav-overlay.open ~ .side-nav{
-  min-width: 320px;
 }
 
 .side-nav .mob-nav{

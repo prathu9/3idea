@@ -5,13 +5,25 @@
 #about-us > h3{
     width: 100%;
     margin: 0 auto;
-    padding: 28px 0;
     background: linear-gradient(90deg, rgb(91, 160, 198) 0%, rgb(2, 65, 148) 100%) 0px 0px / 2369.21px 155.858px;
     text-align: center;
     font-size: 29px;
     font-weight: 700;
     font-style: italic;
     color: rgb(250, 218, 39);
+}
+
+#about-us > h3 .title-wrapper{
+    position: relative;
+    display: inline-block;
+    padding: 28px 0;
+    height: 100%;
+}
+
+#about-us > h3 img{
+    position: absolute;
+    top: 0;
+    left: -100px;
 }
 
 #about-us .cover-img{

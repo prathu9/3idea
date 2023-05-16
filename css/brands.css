@@ -11,6 +11,30 @@
     margin: 20px 20px 40px 20px;
 }
 
+.brand-container .title-banner{
+    width: 100%;
+    margin: 0 auto 10px auto;
+    background: linear-gradient(90deg, rgb(91, 160, 198) 0%, rgb(2, 65, 148) 100%) 0px 0px / 2369.21px 155.858px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(250, 218, 39);
+}
+
+.title-banner .title-wrapper{
+    position: relative;
+    display: inline-block;
+    padding: 28px 0;
+    height: 100%;
+}
+
+.title-banner .title-wrapper img{
+    position: absolute;
+    top: -20px;
+    left: -100px;
+}
+
 .brand-container h2{
     font-size: 18px;
     margin: 10px 0 20px 0;

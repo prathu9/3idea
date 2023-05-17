@@ -426,6 +426,13 @@ header .product-nav li a.active{
    display: none;
 }
 
+.navigation-path{
+  color: #aaaaaa;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 960px){
     nav{
         grid-template-areas: 'hamburgerMenu iconContainer' 'mainNav mainNav';

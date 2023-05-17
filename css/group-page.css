@@ -32,15 +32,19 @@
 .group-container .best-seller {
   display: flex;
   column-gap: 40px;
-  row-gap: 18px;
+  row-gap: 40px;
   flex-wrap: wrap;
-  margin: 0 10px 20px 0;
+  margin: 0 20px 20px 0;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .group-container .best-seller .opt-img {
  position: relative;
-  width: 170px;
-  height: 170px;
+  /* width: 170px;
+  height: 170px; */
+  flex: 13.68% 0 0;
+  aspect-ratio: 1/1;
   border: 5px solid #d8d8d8;
   cursor: pointer;
   user-select: none;
@@ -100,14 +104,16 @@
 .shop-by-refill .refill-opt {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 20px 20px 20px 0;
+  justify-content: space-between;
 }
 
 .shop-by-tech .tech-opt button,
 .shop-by-purpose .purpose-opt button,
 .shop-by-refill .refill-opt button {
-  width: 281px;
-  margin: 0 32px 40px 0;
+  /* width: 281px; */
+  flex: 22.35% 0 0;
+  /* margin: 0 32px 40px 0; */
   padding: 15px 0;
   cursor: pointer;
   color: #4e4e4e;
@@ -120,11 +126,13 @@
 }
 
 .shop-by-purpose .purpose-opt button{
-    width: 385px;
+    /* width: 385px; */
+    flex: 30.6% 0 0;
 }
 
 .shop-by-refill .refill-opt button{
-    width: 47.38%;
+    /* width: 47.38%; */
+    flex: 47.1% 0 0;
 }
 
 .shop-by-tech .tech-opt button:hover,

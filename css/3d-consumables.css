@@ -48,10 +48,82 @@
 }
 
 .color-opt {
+  position: relative;
   width: 135px;
   height: 135px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
+
+.color-opt span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.color-opt:nth-child(1) span{
+  color: #f00;
+}
+
+.color-opt:nth-child(2) span{
+  color: #ff7816;
+}
+
+.color-opt:nth-child(3) span{
+  color: #fada27;
+}
+
+.color-opt:nth-child(4) span{
+  color: #80d957;
+}
+
+.color-opt:nth-child(5) span{
+  color: #429cff;
+}
+
+.color-opt:nth-child(6) span{
+  color: #3c5a99;
+}
+
+.color-opt:nth-child(7) span{
+  color: #d282e9;
+}
+
+.color-opt:nth-child(15) span{
+  color: #ff66c4;
+}
+
+.color-opt:nth-child(9) span{
+  color: #f8d06f;
+}
+
+.color-opt:nth-child(10) span{
+  color: #b3b3b3;
+}
+
+.color-opt:nth-child(11) span{
+  color: #d5701b;
+}
+
+.color-opt:nth-child(12) span{
+  color: #ffd26d;
+}
+
+.color-opt:nth-child(13) span{
+  color: #ededed;
+}
+
+.color-opt:nth-child(14) span{
+  color: #272727;
+}
+
+.color-opt:nth-child(15) span{
+  color: #ff7816;
+}
+
 
 .filament-material-opt,
 .resin-material-opt {

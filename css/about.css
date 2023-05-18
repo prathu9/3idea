@@ -52,22 +52,22 @@
     background-color: #c5e1ff;
 }
 
-.section1 > div:nth-child(3){
+.section1 > div:nth-child(2){
     color: #e93b3c;
     background-color: #ffe1e1;
 }
 
-.section1 > div:nth-child(4){
+.section1 > div:nth-child(3){
     color: #f6a135;
     background-color: #ffe4c2;
 }
 
-.section1 > div:nth-child(5){
+.section1 > div:nth-child(4){
     color: #54b3dc;
     background-color: #daf4ff;
 }
 
-.section1 > div:nth-child(5) p{
+.section1 > div:nth-child(4) p{
     margin-bottom: 50px;
 }
 

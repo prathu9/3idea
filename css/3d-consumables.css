@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 40px 0;
   color: #fada27;
   background-color: rgb(91, 160, 198);
@@ -124,6 +125,13 @@
   color: #ff7816;
 }
 
+.surface-opt .color-opt img{
+  width: 100%;
+}
+
+.surface-opt .color-opt span{
+  color: #fff;
+}
 
 .filament-material-opt,
 .resin-material-opt {

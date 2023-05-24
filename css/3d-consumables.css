@@ -127,6 +127,31 @@
   color: #ff7816;
 }
 
+.color-opt-container .color-opt{
+  cursor: pointer;
+}
+
+.color-bg-gif{
+  position: absolute;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: -1;
+  display: none;
+}
+
+.color-opt-container .color-opt:hover .color-bg-gif{
+  display: block;
+}
+
+.color-opt-container .color-opt:nth-child(13):hover{
+  background-color: rgba(0,0,0,0.2);
+}
+
+.color-opt-container .color-opt:hover span{
+  color: #fff;
+}
+
 .surface-opt .color-opt img{
   width: 100%;
 }

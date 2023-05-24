@@ -43,8 +43,10 @@
 .track-order-inp{
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   color: #fff;
   margin: 0 0 10px 0;
+  height: fit-content;
 }
 
 .footer-cover{
@@ -248,4 +250,19 @@ footer .copyright-section {
     .footer-nav .contact{ 
         width: 80%;
     }
+}
+
+@media screen and (max-width: 734px){
+  .inp-container{
+    margin: 0 auto;
+  }
+
+  .newsletter-inp,
+  .track-order-inp{
+    margin: 20px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
 }

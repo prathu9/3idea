@@ -120,11 +120,11 @@
 }
 
 .color-opt:nth-child(14) span{
-  color: #272727;
+  color: #aaaaaa;
 }
 
 .color-opt:nth-child(15) span{
-  color: #ff7816;
+  color: #272727;
 }
 
 .color-opt-container .color-opt{
@@ -142,10 +142,6 @@
 
 .color-opt-container .color-opt:hover .color-bg-gif{
   display: block;
-}
-
-.color-opt-container .color-opt:nth-child(13):hover{
-  background-color: rgba(0,0,0,0.2);
 }
 
 .color-opt-container .color-opt:hover span{

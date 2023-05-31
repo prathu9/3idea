@@ -20,7 +20,12 @@
   transform: translateY(-50%);
 }
 
-.mobile-app-banner .banner-container img{
+.mobile-app-banner .banner-container img:nth-child(2){
+  position: absolute;
+  right: 110px;
+}
+
+.mobile-app-banner .banner-container img:nth-child(3){
   width: 100%;
   display: none;
 }
@@ -29,7 +34,8 @@
     display: block;
 }
 
-.mobile-app-banner .banner-container:hover h1{
+.mobile-app-banner .banner-container:hover h1,
+.mobile-app-banner .banner-container:hover img:nth-child(2){
   display: none;
 }
 

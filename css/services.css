@@ -42,9 +42,9 @@
 }
 
 .service-options .option {
-  min-width: 190px;
-  width: 190px;
-  height: 165px;
+  min-width: 150px;
+  width: 170px;
+  height: 150px;
   border: 2px solid #000;
   border-radius: 25px;
   display: flex;
@@ -75,6 +75,10 @@
 }
 
 .service-options .option:nth-child(6) {
+  box-shadow: 7px 7px 0 1px #003f84, 7px 7px 0 2px #000;
+}
+
+.service-options .option:nth-child(7) {
   box-shadow: 7px 7px 0 1px #003f84, 7px 7px 0 2px #000;
 }
 

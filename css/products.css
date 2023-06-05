@@ -1,6 +1,6 @@
 .category {
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 280px auto;
   grid-template-rows: 100px auto;
 }
 
@@ -162,7 +162,7 @@
 .buy-options,
 .other-options {
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 280px auto;
   margin: 20px 0;
 }
 
@@ -192,7 +192,7 @@
 .freq-img-wrapper,
 .favbrand-img-wrapper {
   margin: 15px;
-  width: 180px;
+  width: 175px;
   height: 180px;
   background-color: #aaaaaa;
 }
@@ -203,30 +203,36 @@
   margin: 20px 0;
 }
 
-.purpose-shop-opt button,
+.purpose-shop-opt,
+.tech-shop-opt{
+  gap: 40px;
+}
+
+.purpose-shop-opt a,
 .tech-shop-opt button {
-  width: 368px;
-  margin: 0 40px 40px 0;
+  width: 377px;
   padding: 15px 0;
   cursor: pointer;
   color: #4e4e4e;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 500;
   border: 5px solid #d2d2d3;
   background-color: #ededed;
   box-shadow: 0px 0px 0px 0px #316cac;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
 }
 
-.purpose-shop-opt button:hover,
+.purpose-shop-opt a:hover,
 .tech-shop-opt button:hover {
-  font-weight: 800;
   color: #fff;
   border: 5px solid #1e5999;
   background-color: #54b3dc;
   box-shadow: 8px 8px 0px 0px #316cac;
 }
 
+.purpose-shop-opt a:active,
 .buy-options button:active,
 .other-options button:active{
   transform: translate(8px, 8px);
@@ -244,8 +250,14 @@
 
 .other-options button {
   margin: 0 40px 40px 0;
-  padding: 18px;
-  font-size: 25px;
+  padding: 15px;
+  font-size: 12px;
+  border: 5px solid #d2d2d3;
+  text-transform: uppercase;
+}
+
+.other-options-container img{
+  width: 100%;
 }
 
 @media screen and (max-width: 1350px) {

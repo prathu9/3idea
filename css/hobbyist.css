@@ -62,3 +62,16 @@
     transform: translateY(10px);
     box-shadow: 0 0px 0px 0px #f49f35;
 }
+
+.preference-opt.active{
+    transform: translateY(10px);
+    box-shadow: 0 0px 0px 0px #f49f35;
+}
+
+.option-container .preference-detail{
+  display: none;
+}
+
+.option-container .preference-detail.visible-service{
+  display: block;
+}

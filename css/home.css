@@ -16,23 +16,25 @@
   margin: 40px 0;
 }
 
-.shop-by-purpose-container .button-container button {
+.shop-by-purpose-container .button-container a {
   width: 320px;
-  height: 50px;
+  height: fit-content;
+  padding: 15px 0;
   background-color: #54b3dc;
   color: #fff;
   border-radius: 5px;
   border: none;
   font-size: 12px;
-  /* margin: 0 45px 0 0; */
+  text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0 15px 0 0 #316cac;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
-.shop-by-purpose-container .button-container button:active {
+.shop-by-purpose-container .button-container a:active {
   box-shadow: 0 0 0 0 #316cac;
   transform: translateY(20px);
 }

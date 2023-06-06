@@ -36,7 +36,7 @@
 (function(){
     const sideMenuContainer = document.querySelector('.side-menu-container');
     const sideMenuOptions = document.querySelectorAll('.side-menu-option');
-    const sideMenuBackBtn =  document.querySelector('.side-menu-back-btn');
+    const sideMenuBackBtn =  document.querySelectorAll('.side-menu-back-btn');
     let translateValue = 0;
     sideMenuOptions.forEach((sideMenuOption) => {
         sideMenuOption.querySelector(':scope > span').addEventListener('click', () => {
@@ -46,9 +46,13 @@
         })
     })
 
-    sideMenuBackBtn.addEventListener('click', () => {
-        translateValue-=100;
-        console.log(translateValue)
-        sideMenuContainer.style.transform = `translateX(-${translateValue}%)`;
-    })
+    sideMenuBackBtn.forEach(backBtn => 
+        backBtn.addEventListener('click', () => {
+            translateValue-=100;
+            sideMenuContainer.style.transform = `translateX(-${translateValue}%)`;
+            sideMenuOptions.forEach((sideMenuOption) => {
+                sideMenuOption.querySelector(':scope > .sub-side-menu').style.display = "none";
+            })
+        })
+    )
 })();

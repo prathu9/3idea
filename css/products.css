@@ -65,6 +65,7 @@
   display: flex;
   align-items: center;
   user-select: none;
+  color: #000;
 }
 
 .category-img {

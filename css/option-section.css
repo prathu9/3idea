@@ -81,7 +81,7 @@
 
 .shop-by-tech .tech-opt button,
 .shop-by-purpose .purpose-opt a,
-.shop-by-refill .refill-opt button {
+.shop-by-refill .refill-opt a {
   /* width: 281px; */
   flex: 22.35% 0 0;
   /* margin: 0 32px 40px 0; */
@@ -103,9 +103,9 @@
     flex: 30.6% 0 0;
 }
 
-.shop-by-refill .refill-opt button{
+.shop-by-refill .refill-opt a{
     /* width: 47.38%; */
-    flex: 47.1% 0 0;
+    flex: 48% 0 0;
 }
 
 .shop-by-tech .tech-opt button:hover,

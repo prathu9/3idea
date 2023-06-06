@@ -40,12 +40,6 @@
     margin: 10px 0 20px 0;
 }
 
-.promo-banner{
-    margin: 20px 0;
-    height: 100px;
-    border: 1px solid #000;
-}
-
 .brand-wrapper,
 .offer-banner{
     display: flex;

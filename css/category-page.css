@@ -65,7 +65,8 @@ main {
   justify-content: space-between;
 }
 
-.best-seller-section .best-seller .opt-img {
+.best-seller-section .best-seller .opt-img,
+.new-release-opt .opt-img {
   position: relative;
   width: 170px;
   aspect-ratio: 1/1;
@@ -113,6 +114,7 @@ main {
   height: 32px;
   margin: 0 0 20px 0;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .new-release-title {
@@ -130,11 +132,8 @@ main {
   column-gap: 25px;
   row-gap: 15px;
   flex-wrap: wrap;
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 0;
+  gap: 32px;
+  justify-content: space-between;
 }
 
-.category-container .banner-img {
-  background-color: #edebec;
-  height: 200px;
-  margin: 0 0 20px 0;
-}

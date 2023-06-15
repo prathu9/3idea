@@ -1,4 +1,13 @@
-table {
+.title-banner{
+    margin: 0 0 20px 0;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #222;
+}
+
+.main.cart table {
   width: 100%;
   border-collapse: collapse;
   font-family: Poppins, sans-serif;

@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/user/login.css">
+    <link rel="stylesheet" href="../css/sign-in-register.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="site-icon-wrapper">
-                    <a href="">
+                    <a href="./sign-in.html">
                         <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
                     </a>
                 </div>
@@ -161,28 +161,15 @@
                     SIGN IN
                 </li>
                 <li class="form-options" data-form-option="register">
-                    REGISTER
+                    <a href="./register.html">REGISTER</a>
                 </li>
             </ul>
-            <form class="login visible-option" >
+            <form class="login" >
                 <label for="login-username">Username</label>
                 <input type="text" id="login-username">
                 <label for="login-password">Password</label>
                 <input type="text" id="login-password">
                 <button>SIGN IN</button>
-            </form>
-            <form class="register">
-                <label for="firstname">First name:</label>
-                <input type="text" id="firstname">
-                <label for="lastname">Last name:</label>
-                <input type="text" id="lastname">
-                <label for="email">Email:</label>
-                <input type="text" id="email">
-                <label for="register-password">Password:</label>
-                <input type="text" id="register-password">
-                <label for="mobile-number">Mobile:</label>
-                <input type="text" id="mobile-number">
-                <button>SIGN UP</button>
             </form>
         </div>
     </main>
@@ -316,7 +303,6 @@
     </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="../js/user/login.js"></script>
     <script src="../js/header.js"></script>
 </body>
 

@@ -18,15 +18,16 @@
     cursor: pointer;
 }
 
+.form-container ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
 .form-container ul li.active{
     border-bottom: 1px solid blue;
 }
 
 .form-container form{
-    display: none;
-}
-
-.form-container form.visible-option{
     display: block;
 }
 

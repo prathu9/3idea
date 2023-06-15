@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business</title>
+    <title>Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/business.css">
-    <link rel="stylesheet" href="./css/option-section.css">
+    <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 
@@ -199,103 +202,129 @@
             </div>
         </div>
     </header>
-    <main class="main-content">
+    <main class="main-content main cart">
         <h3 class="title-banner">
             <span class="title-wrapper">
-                <!-- <img src="./asset/images/banner/business-banner-icon.svg" alt="brand icon" /> -->
-                BUSINESSES
+                CART
             </span>
         </h3>
-        <div class="option-container">
-            <div class="best-seller-container">
-                <h2>BEST SELLER</h2>
-                <div class="best-seller">
-                    <div class="opt-img">
-                        <img src="./asset/images/best-seller-test.png" alt="">
+        <div class="page-content pt-10 pb-10">
+            <div class="container mt-8 mb-4">
+                <div class="row gutter-lg">
+                    <div class="col-lg-12 col-md-12">
+                        <table class="shop-table cart-table mt-2 table-bordered">
+                            <thead>
+                                <tr>
+                                    <th><span>#</span></th>
+                                    <th><span>Product Name</span></th>
+                                    <th><span>Price</span></th>
+                                    <th><span>Qty</span></th>
+                                    <th><span>Shipping</span></th>
+                                    <th><span>Subtotal</span></th>
+                                    <th><span>Delete</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 4 -->
+                                                                
+                                    <tr>
+                                    <td class="product-thumbnail">
+                                        <figure>
+                                            <a href="spare-parts-1708/limit-switch-for-4max-pro-2-0">
+                                                <img src="https://www.3idea.in/assets/images/products/1659358792Limit switch for 4Max Pro 2.0.jpg" alt="product">
+                                            </a>
+                                        </figure>
+                                    </td>
+                                    <td class="product-name">
+                                        <div class="product-name-section">
+                                            <a href="spare-parts-1708/limit-switch-for-4max-pro-2-0">Limit switch for 4Max Pro 2.0</a>
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal">
+                                        <span class="amount">262.00</span>
+                                    </td>
+                                    <td class="product-quantity">
+                                        <span class="amount">1</span>
+                                    </td>
+                                    <td class="product-shipping">
+                                        <span class="amount">FREE</span>
+                                    </td>
+                                    <!-- <td class="product-tax">
+                                        <span class="amount"></span>
+                                    </td> -->
+                                    <td class="product-price">
+                                        <span class="amount">262.00</span>
+                                    </td>
+                                    <td class="product-price sample-icon">
+                                        <a href="https://www.3idea.in/shoppingcart/removeItem/c59b469d724f7919b7d35514184fdc0f" class="product-remove" data-id="1708" title="Remove this product">
+                                            <i class="fas fa-trash-alt" title="Remove this product"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                                                                        <tr>
+                                    <td class="product-thumbnail">
+                                        <figure>
+                                            <a href="spare-parts-1640/brass-nozzle-for-v5-v6-extruder-j-head-1pc">
+                                                <img src="https://www.3idea.in/assets/images/products/1654775452Brass nozzle.jpg" alt="product">
+                                            </a>
+                                        </figure>
+                                    </td>
+                                    <td class="product-name">
+                                        <div class="product-name-section">
+                                            <a href="spare-parts-1640/brass-nozzle-for-v5-v6-extruder-j-head-1pc">Brass Nozzle for V5 V6 Extruder J- Head 1Pc</a>
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal">
+                                        <span class="amount">199.00</span>
+                                    </td>
+                                    <td class="product-quantity">
+                                        <span class="amount">3</span>
+                                    </td>
+                                    <td class="product-shipping">
+                                        <span class="amount">FREE</span>
+                                    </td>
+                                    <!-- <td class="product-tax">
+                                        <span class="amount"></span>
+                                    </td> -->
+                                    <td class="product-price">
+                                        <span class="amount">597.00</span>
+                                    </td>
+                                    <td class="product-price sample-icon">
+                                        <a href="https://www.3idea.in/shoppingcart/removeItem/84f0f20482cde7e5eacaf7364a643d33" class="product-remove" data-id="1640" title="Remove this product">
+                                            <i class="fas fa-trash-alt" title="Remove this product"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
-                    <div class="opt-img"></div>
                 </div>
-                <button class="see-more-btn">SEE MORE</button>
-            </div>
-            <div class="shop-by-tech">
-                <h4>SHOP BY TECHNOLOGY</h4>
-                <div class="tech-opt">
-                    <button>DLP</button>
-                    <button>SLA</button>
-                    <button>FDM</button>
-                    <button>LCD</button>
-                </div>
-            </div>
-            <div class="shop-by-purpose">
-                <h4>SHOP BY PURPOSE</h4>
-                <div class="purpose-opt">
-                    <a href="./hobbyist.html">FOR HOBBYIST</a>
-                    <a href="./educator.html">FOR EDUCATOR</a>
-                    <a href="#" class="active">FOR BUSINESS</a>
-                </div>
-            </div>
-            <div class="shop-by-refill">
-                <h4>SHOP BY REFILL</h4>
-                <div class="refill-opt">
-                    <a href="./3d-consumables.html">Filaments</a>
-                    <a href="./3d-consumables.html">Resins</a>
-                </div>
-            </div>
-            <div class="chat-opt">
-                <h4>Know more...chat with us!</h4>
-                <a href="./services.html"><img src="./asset/images/call-expert-banner.png" alt="call expert"></a>
+                <div class="row justify-content-between mt-3">
+                    <div class="col-lg-3 cont-shop-btn">
+                        <a href="https://www.3idea.in/" class="btn btn-primary btn-block">Continue Shopping</a>
+                    </div>
+                                    <aside class="col-lg-4 sticky-sidebar-wrapper">
+                        <div class="sticky-sidebar" data-sticky-options="{'bottom': 20}" style="border-bottom: 0px none rgb(102, 102, 102);">
+                            <div class="summary mb-4">
+                                <h3 class="summary-title text-left">Cart Totals</h3>
+                                <table>
+                                    <tbody><tr class="summary-subtotal">
+                                        <td>
+                                            <h4 class="summary-subtitle">Total</h4>
+                                        </td>
+                                        <td>
+                                            <p class="summary-total-price">859.00</p>
+                                            <p>(Tax are including)</p>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <a href="https://www.3idea.in/checkout" class="btn btn-dark btn-checkout">Proceed to checkout</a>
+                            </div>
+                        </div>
+                    </aside>
+                                </div>
             </div>
         </div>
-        <section class="section2">
-            <div class="application-options">
-                <div class="option" data-service-name="orders">
-                    <div class="option-icon">
-                        <img src="./asset/images/applications/education.svg" alt="education icon" />
-                    </div>
-                    <h3>EDUCATION</h3>
-                </div>
-                <div class="option" data-service-name="shipping">
-                    <div class="option-icon">
-                        <img src="./asset/images/applications/automotive.svg" alt="automotive icon" />
-                    </div>
-                    <h3>AUTOMOTIVE</h3>
-                </div>
-                <div class="option" data-service-name="payment">
-                    <div class="option-icon">
-                        <img src="./asset/images/applications/healthcare.svg" alt="healthcare icon" />
-                    </div>
-                    <h3>HEALTHCARE</h3>
-                </div>
-                <div class="option" data-service-name="returns">
-                    <div class="option-icon">
-                        <img src="./asset/images/applications/jewellery.png" alt="jewellery icon" />
-                    </div>
-                    <h3>JEWELLERY</h3>
-                </div>
-                <div class="option" data-service-name="rewards">
-                    <div class="option-icon">
-                        <img src="./asset/images/applications/manufacturing.svg" alt="manufacturing icon" />
-                    </div>
-                    <h3>MANUFACTURING</h3>
-                </div>
-                <div class="option" data-service-name="technical_help">
-                    <div class="option-icon">
-                        <img src="./asset/images/applications/architecture.svg" alt="architecture icon" />
-                    </div>
-                    <h3>ARCHITECTURE</h3>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="inp-container">
@@ -426,6 +455,7 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/services.js"></script>
 </body>
 
 </html>

@@ -80,4 +80,17 @@
     const allSliders = document.querySelectorAll('.swiper2');
     // Loop over all of the fetched sliders and apply Swiper on each one.
     allSliders.forEach(slider => buildSwiperSlider(slider));
+
+    const swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });
 })(); /* IIFE end */

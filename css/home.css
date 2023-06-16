@@ -1,3 +1,27 @@
+.ticket-carousel{
+  height: 200px;
+}
+
+.ticket-carousel .swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-carousel .swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ticket-carousel .swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+
 .shop-by-purpose-container h3,
 .shop-by-categories h3,
 .best-selling-product h3,

@@ -92,5 +92,10 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+            1140: {
+                slidesPerView: 3,
+            },
+        }
     });
 })(); /* IIFE end */

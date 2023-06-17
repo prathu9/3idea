@@ -1,5 +1,5 @@
 .ticket-carousel{
-  height: 250px;
+  height: 18vw;
 }
 
 .ticket-carousel .swiper{
@@ -320,8 +320,15 @@
   }
 }
 
+@media screen and (max-width: 450px){
+  .ticket-carousel{
+    height: 21vw;
+  }
+}
+
 @media screen and (max-width: 346px){
   .client-list-container .title-container h3 {
     font-size: 12px;
   }
 }
+

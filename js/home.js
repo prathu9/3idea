@@ -85,7 +85,7 @@
         slidesPerView: 3,
         spaceBetween: 0,
         autoplay: {
-            delay: 2500,
+            delay: 1000,
             disableOnInteraction: false
         },
         pagination: {

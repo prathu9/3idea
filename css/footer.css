@@ -53,9 +53,15 @@ footer{
 }
 
 .footer-cover{
-  background-image: url("../asset/images/footer-bg.png");
+  background-image: url("../asset/images/footer_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  padding: 50px 45px 35px;
+}
+
+.footer-item-wrapper{
+  padding: 5px;
+  background-color: #fff; 
 }
 
 .usp-section {
@@ -275,12 +281,20 @@ footer .copyright-section {
     align-items: center;
     gap: 5px;
   }
+
+  .footer-cover{
+    padding: 50px 32px 35px;
+  }
 }
 
 @media screen and (max-width: 450px){
   .about-section{
     width: 70%;
   }
+}
 
- 
+@media screen and (max-width: 350px){
+  .footer-cover{
+    padding: 50px 10px 35px;
+  }
 }

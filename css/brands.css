@@ -54,3 +54,29 @@
     background-color: #aaaaaa;
 }
 
+@media screen and (max-width: 640px) {
+    .main-content {
+        grid-template-columns: auto;
+    }
+    
+    .browse-category {
+        display: none;
+    }
+
+    .brand-container {
+        margin: 0;
+    }
+
+    .brand-container > h3 .title-wrapper {
+        padding: 20px 0;
+    }
+
+    .brand-container h2 {
+        margin: 40px 0 20px 20px;
+    }
+
+    .brand-wrapper, .offer-banner {
+        justify-content: center;
+    }
+}
+

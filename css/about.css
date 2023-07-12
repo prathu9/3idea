@@ -274,3 +274,29 @@
 .section3 div ul {
   margin: 20px;
 }
+
+@media screen and (max-width: 640px) {
+  #about-us > h3 .title-wrapper {
+    padding: 20px 0;
+  }
+
+  #about-us > h3 img {
+    width: 80px;
+    left: -80px;
+  }
+
+  #about-us .cover-img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .section1 h1 {
+    font-size: 2em;
+  }
+
+  .section1 .text-container {
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 20px 0;
+  }
+}

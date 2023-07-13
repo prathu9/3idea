@@ -136,6 +136,10 @@
     margin: 20px 0 10px 20px;
   }
 
+  .shop-opt button {
+    margin: 20px 0;
+  }
+
   .accessory-selector {
     margin: 40px auto;
     width: 95%;
@@ -153,12 +157,10 @@
     grid-column: 1/3;
   }
 
-  .accessory-selector textarea{
+  .accessory-selector textarea {
     grid-column: 1/3;
     grid-row: 5/7;
   }
-
-
 }
 
 @media screen and (max-width: 385px) {

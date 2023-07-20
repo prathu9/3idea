@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/side-panel.css">
     <link rel="stylesheet" href="./css/category-page.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
@@ -200,7 +201,10 @@
         </div>
     </header>
     <main class="main-content">
-        <div class="browse-category">
+        <div class="browse-category minimize hide">
+            <button class="close-btn">
+                X
+            </button>
             <div class="side-category-list">
                 <h4>BROWSE ALL CATEGORY</h4>
                 <h5>
@@ -359,6 +363,9 @@
                 </svg>
                 <span>3D SCANNER</span>
                 <img src="./asset/images/banner/banner-pattern.svg" alt="pattern" />
+            </div>
+            <div class="filter-icon">
+                check
             </div>
             <div class="best-seller-section">
                 <div class="best-seller-container">
@@ -535,6 +542,7 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/browse-category.js"></script>
 </body>
 
 </html>

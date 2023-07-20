@@ -58,10 +58,6 @@
     .main-content {
         grid-template-columns: auto;
     }
-    
-    .browse-category {
-        display: none;
-    }
 
     .brand-container {
         margin: 0;

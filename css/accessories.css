@@ -111,10 +111,6 @@
     grid-template-columns: auto;
   }
 
-  .browse-category {
-    display: none;
-  }
-
   .accessories-title span {
     padding: 20px 0;
   }

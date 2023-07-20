@@ -105,10 +105,6 @@
       grid-template-columns: auto;
     }
   
-    .browse-category {
-      display: none;
-    }
-  
     .spare-parts-title span {
       padding: 20px 0;
     }

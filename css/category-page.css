@@ -76,7 +76,9 @@ main {
 }
 
 .best-seller .opt-img span,
-.best-seller .opt-img button{
+.best-seller .opt-img button,
+.new-release-opt .opt-img span, 
+.new-release-opt .opt-img button{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -90,37 +92,45 @@ main {
   box-sizing: content-box;
 }
 
-.best-seller .opt-img span{
+.best-seller .opt-img span,
+.new-release-opt .opt-img span{
   transform: translate(-50%, -65%);
   z-index:1;
 }
 
-.best-seller .opt-img button{
+.best-seller .opt-img button,
+.new-release-opt .opt-img button{
   transform: translate(-50%, 65%);
   z-index:1;
 }
 
 .best-seller-section .best-seller .opt-img:hover span,
-.best-seller-section .best-seller .opt-img:hover button{
+.best-seller-section .best-seller .opt-img:hover button,
+.new-release-opt .opt-img:hover span, 
+.new-release-opt .opt-img:hover button{
   display: block;
 }
 
-.best-seller-section .best-seller .opt-img img {
+.best-seller-section .best-seller .opt-img img,
+.new-release-opt .opt-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.best-seller-section .best-seller .opt-img:hover {
+.best-seller-section .best-seller .opt-img:hover,
+.new-release-opt .opt-img:hover {
   box-shadow: 5px 5px 0 0 #558ad1;
 }
 
-.best-seller-section .best-seller .opt-img:active {
+.best-seller-section .best-seller .opt-img:active,
+.new-release-opt .opt-img:active {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 0 #558ad1;
 }
 
-.best-seller-section .best-seller .opt-img:after {
+.best-seller-section .best-seller .opt-img:after,
+.new-release-opt .opt-img:after {
   content: "";
   position: absolute;
   display: none;
@@ -132,7 +142,8 @@ main {
   background-color: rgba(101, 145, 193, 0.8);
 }
 
-.best-seller-section .best-seller .opt-img:hover:after {
+.best-seller-section .best-seller .opt-img:hover:after,
+.new-release-opt .opt-img:hover:after {
   display: block;
 }
 

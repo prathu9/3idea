@@ -65,50 +65,13 @@ main {
   justify-content: space-between;
 }
 
-.best-seller-section .best-seller .opt-img,
-.new-release-opt .opt-img {
+.best-seller-section .best-seller .opt-img-wrapper,
+.new-release-opt .opt-img-wrapper{
   position: relative;
   width: 170px;
-  aspect-ratio: 1/1;
   border: 5px solid #d8d8d8;
   cursor: pointer;
   user-select: none;
-}
-
-.best-seller .opt-img span,
-.best-seller .opt-img button,
-.new-release-opt .opt-img span, 
-.new-release-opt .opt-img button{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: none;
-  min-width:50%;
-  padding: 5px 5px; 
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #316cac;
-  text-align: center;
-  box-sizing: content-box;
-}
-
-.best-seller .opt-img span,
-.new-release-opt .opt-img span{
-  transform: translate(-50%, -65%);
-  z-index:1;
-}
-
-.best-seller .opt-img button,
-.new-release-opt .opt-img button{
-  transform: translate(-50%, 65%);
-  z-index:1;
-}
-
-.best-seller-section .best-seller .opt-img:hover span,
-.best-seller-section .best-seller .opt-img:hover button,
-.new-release-opt .opt-img:hover span, 
-.new-release-opt .opt-img:hover button{
-  display: block;
 }
 
 .best-seller-section .best-seller .opt-img img,
@@ -118,19 +81,19 @@ main {
   object-fit: contain;
 }
 
-.best-seller-section .best-seller .opt-img:hover,
-.new-release-opt .opt-img:hover {
+.best-seller-section .best-seller .opt-img-wrapper:hover,
+.new-release-opt .opt-img-wrapper:hover {
   box-shadow: 5px 5px 0 0 #558ad1;
 }
 
-.best-seller-section .best-seller .opt-img:active,
-.new-release-opt .opt-img:active {
+.best-seller-section .best-seller .opt-img-wrapper:active,
+.new-release-opt .opt-img-wrapper:active {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 0 #558ad1;
 }
 
-.best-seller-section .best-seller .opt-img:after,
-.new-release-opt .opt-img:after {
+.best-seller-section .best-seller .opt-img-wrapper:after,
+.new-release-opt .opt-img-wrapper:after {
   content: "";
   position: absolute;
   display: none;
@@ -142,9 +105,44 @@ main {
   background-color: rgba(101, 145, 193, 0.8);
 }
 
-.best-seller-section .best-seller .opt-img:hover:after,
-.new-release-opt .opt-img:hover:after {
+.best-seller-section .best-seller .opt-img-wrapper:hover:after,
+.new-release-opt .opt-img-wrapper:hover:after {
   display: block;
+}
+
+.best-seller-section .best-seller .opt-img-detail,
+.new-release-opt .opt-img-detail{
+  margin: 5px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-seller .opt-img-detail span,
+.best-seller .opt-img-detail button,
+.new-release-opt .opt-img-detail span, 
+.new-release-opt .opt-img-detail button{
+  display: block;
+  padding: 5px 5px; 
+  color: #000;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+.best-seller .opt-img span,
+.new-release-opt .opt-img span{
+  text-align: right;
+}
+
+.best-seller .opt-img-detail button,
+.new-release-opt .opt-img-detail button{
+  margin: 0 5px 0 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.best-seller .opt-img-detail button .fa-solid{
+  font-size: 18px;
 }
 
 .best-seller-container .see-more-btn {

@@ -6,7 +6,7 @@
     filterIcon.addEventListener("click", () => {
         browseCat.classList.remove("minimize");
         browseCat.classList.remove("slide-out");
-        browseCat.classList.remove("hide");
+        browseCat.classList.remove("mob-hide");
         browseCat.classList.add("slide-in");
         document.body.style.overflow = "hidden";
     });

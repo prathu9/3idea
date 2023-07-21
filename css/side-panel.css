@@ -2,6 +2,16 @@
   margin: 40px 40px 0 20px;
 }
 
+.browse-category .close-btn {
+  position: absolute;
+  display: none;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .side-category-list {
   position: sticky;
   top: 0;
@@ -27,7 +37,8 @@
 }
 
 .brand-container .filter-icon,
-.category-container .filter-icon{
+.category-container .filter-icon,
+.Consumables-container .filter-icon{
   display: none;
   margin: 20px 0;
   position: relative;
@@ -48,6 +59,10 @@
     box-sizing: border-box;
   }
 
+  .browse-category .close-btn {
+    display: block;
+  }
+
   .browse-category.slide-in {
     display: block;
     padding: 0 40px 0 0;
@@ -59,15 +74,6 @@
     min-width: 0;
     padding: 0;
     animation: minimize 150ms ease-in forwards;
-  }
-
-  .browse-category .close-btn {
-    position: absolute;
-    right: 10px;
-    font-size: 1.5rem;
-    color: #fff;
-    background-color: transparent;
-    cursor: pointer;
   }
 
   .side-category-list {
@@ -120,7 +126,8 @@
   }
 
   .brand-container .filter-icon,
-  .category-container .filter-icon{
+  .category-container .filter-icon,
+  .Consumables-container .filter-icon{
     display: block;
     cursor: pointer;
   }

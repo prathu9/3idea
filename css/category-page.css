@@ -66,7 +66,7 @@ main {
 }
 
 .best-seller-section .best-seller .opt-img-wrapper,
-.new-release-opt .opt-img-wrapper{
+.new-release-opt .opt-img-wrapper {
   position: relative;
   width: 170px;
   border: 5px solid #d8d8d8;
@@ -111,7 +111,7 @@ main {
 }
 
 .best-seller-section .best-seller .opt-img-detail,
-.new-release-opt .opt-img-detail{
+.new-release-opt .opt-img-detail {
   margin: 5px 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -119,29 +119,29 @@ main {
 
 .best-seller .opt-img-detail span,
 .best-seller .opt-img-detail button,
-.new-release-opt .opt-img-detail span, 
-.new-release-opt .opt-img-detail button{
+.new-release-opt .opt-img-detail span,
+.new-release-opt .opt-img-detail button {
   display: block;
-  padding: 5px 5px; 
+  padding: 5px 5px;
   color: #000;
   text-align: center;
   box-sizing: content-box;
 }
 
 .best-seller .opt-img span,
-.new-release-opt .opt-img span{
+.new-release-opt .opt-img span {
   text-align: right;
 }
 
 .best-seller .opt-img-detail button,
-.new-release-opt .opt-img-detail button{
+.new-release-opt .opt-img-detail button {
   margin: 0 5px 0 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.best-seller .opt-img-detail button .fa-solid{
+.best-seller .opt-img-detail button .fa-solid {
   font-size: 18px;
 }
 
@@ -217,9 +217,9 @@ main {
     margin: 35px 0 20px 0;
   }
 
-  .best-seller-section{
+  .best-seller-section {
     width: 95%;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .best-seller-section .best-seller,
@@ -230,7 +230,7 @@ main {
   }
 }
 
-@media screen and (max-width: 385px){
+@media screen and (max-width: 385px) {
   .category-container .title-container {
     height: 35px;
   }
@@ -239,9 +239,15 @@ main {
     height: 35px;
   }
 
+  .category-container .title-container svg:nth-of-type(1) {
+    top: -24px;
+    left: -28px;
+    height: 90px;
+  }
+
   .category-container .title-container span {
     font-size: 14px;
-}
+  }
 
   .category-container .title-container .banner-icon {
     transform: scale(0.5);

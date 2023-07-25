@@ -11,8 +11,12 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: '#js-prev',
     },
     breakpoints: {
+        250:{
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
       385:{
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 10,
       },
       720:{

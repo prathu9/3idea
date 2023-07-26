@@ -36,7 +36,6 @@
   font-size: 13px;
 }
 
-.brand-container .filter-icon,
 .category-container .filter-icon,
 .Consumables-container .filter-icon{
   display: none;
@@ -125,7 +124,6 @@
     }
   }
 
-  .brand-container .filter-icon,
   .category-container .filter-icon,
   .Consumables-container .filter-icon{
     display: block;

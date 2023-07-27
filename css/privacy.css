@@ -1,0 +1,95 @@
+.privacy-wrapper{
+    display: flex;
+    max-width: 1220px;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-container{
+    margin: 0 0 50px 0;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #222;
+}
+
+.privacy-nav{
+    display: flex;
+    width: 27.8%;
+    border-right: 2px solid #ebebeb;
+}
+
+.privacy-nav-link{
+    position: relative;
+    padding: 16px 2px 16px 20px;
+    width: calc(100% + 2px);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    transition: border 0.35s, color 0.35s, background-color 0.35s;
+    cursor: pointer;
+}
+
+.privacy-nav-link:hover,
+.privacy-nav-link.active{
+    color: #fff;
+    background-color: #26b;
+    border-color: #26b;
+}
+
+.privacy-content{
+    flex:1;
+    padding-left: 2rem;
+}
+
+.privacy-content > div{
+    display: none;
+}
+
+.privacy-content > div.active{
+    display: block;
+}
+
+.privacy-content-title{
+    margin: 0 0 26px 0;
+    font-size: 18px;
+    border-bottom: 1.5px solid #cecece;
+}
+
+.privacy-content-title span{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    line-height: 2.28;
+    border-bottom: 2px solid #26b;
+}
+
+.privacy-content .content{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.86;
+}
+
+.privacy-content .content p{
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 767px){
+    .privacy-wrapper{
+        flex-flow: column nowrap;
+    }
+    
+    .privacy-nav,
+    .privacy-content{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .privacy-nav{
+        flex-flow: column nowrap;
+    }
+}

@@ -144,6 +144,7 @@ footer .footer-nav ul {
 footer .footer-nav ul a {
   text-decoration: none;
   font-size: 12px;
+  color: #000;
 }
 
 .footer-nav .payment-options ul {

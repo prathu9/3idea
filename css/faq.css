@@ -1,0 +1,69 @@
+.title-container {
+  margin: 0 0 50px 0;
+  padding: 20px 0px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  background-color: #222;
+}
+
+.faq-wrapper {
+  max-width: 1220px;
+  margin: 40px auto;
+}
+
+.page-info {
+  margin: 0 0 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.accordion {
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: none;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:last-of-type {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 20px;
+  max-height: 0;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 250ms ease-out;
+}
+
+.panel ul {
+  list-style-type: disc;
+  margin: 20px 0;
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

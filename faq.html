@@ -1,336 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3Idea</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/cover-animation.css">
-    <link rel="stylesheet" href="./css/playstore.css">
-    <link rel="stylesheet" href="./css/term-conditions.css">
-    <link rel="stylesheet" href="./css/footer.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cover-animation.css" />
+    <link rel="stylesheet" href="./css/playstore.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
     <header>
-        <div class="top-bar">
-            <h5>PROMO CODE</h5>
-            <div class="media-icon-container">
-                <div class="media-icon-wrapper">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                </div>
-                <div class="media-icon-wrapper">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="media-icon-wrapper">
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="media-icon-wrapper">
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <div class="media-icon-wrapper">
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div class="media-icon-wrapper">
-                    <a href=""><i class="fa-brands fa-amazon"></i></a>
-                </div>
-            </div>
+      <div class="top-bar">
+        <h5>PROMO CODE</h5>
+        <div class="media-icon-container">
+          <div class="media-icon-wrapper">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="media-icon-wrapper">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="media-icon-wrapper">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="media-icon-wrapper">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="media-icon-wrapper">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="media-icon-wrapper">
+            <a href=""><i class="fa-brands fa-amazon"></i></a>
+          </div>
         </div>
-        <nav>
-            <div class="hamburger-menu-container">
-                <div class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div class="main-nav-container">
-                <div class="logo-container">
-                    <a href="./index.html"><img src="./asset/images/logo.png" /></a>
-                </div>
-                <ul class="main-nav">
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./about.html">ABOUT US</a></li>
-                    <li><a href="./brands.html">BRANDS</a></li>
-                    <li><a href="./products.html">PRODUCTS</a></li>
-                    <li><a href="./services.html">SERVICES</a></li>
-                </ul>
-            </div>
-            <div class="site-icon-container">
-                <div class="site-icon-wrapper search" tabindex="0">
-                    <div class="icon">
-                        <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
-                    </div>
-                    <div class="field">
-                        <input type="text" placeholder="Search for something" />
-                        <div><span>Search&nbsp;</span><span>for&nbsp;</span><span>something...&nbsp;</span></div>
-                    </div>
-                </div>
-                <div class="site-icon-wrapper">
-                    <a href="./user/sign-in.html">
-                        <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
-                    </a>
-                </div>
-                <div class="site-icon-wrapper">
-                    <a href="./shoppingcart.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </div>
-                <div class="site-icon-wrapper">
-                    <a href="">
-                        <i class="fa-regular fa-heart"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <ul class="product-nav">
-            <li><a href="./laser-engravers.html">Laser Engravers</a></li>
-            <li><a href="./3d-printer.html">3D Printer</a></li>
-            <li><a href="./3d-scanner.html">3D Scanner</a></li>
-            <li><a href="./3d-pen.html">3D Pen</a></li>
-            <li><a href="./robotics.html">Robotics</a></li>
-            <li><a href="./food-printers.html">Food Printers</a></li>
-            <li><a href="./3d-consumables.html">3D Consumables</a></li>
-            <li><a href="./accessories.html">Accessories</a></li>
-            <li><a href="./spare-parts.html">Spare Parts</a></li>
-        </ul>
-        <div class="side-nav-overlay">
+      </div>
+      <nav>
+        <div class="hamburger-menu-container">
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <button class="close-side-nav">
-            <svg enable-background="new 0 0 256 256" id="Layer_1" version="1.1" viewBox="0 0 256 256"
-                 xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path
-                    d="M137.051,128l75.475-75.475c2.5-2.5,2.5-6.551,0-9.051s-6.551-2.5-9.051,0L128,118.949L52.525,43.475  c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.551,0,9.051L118.949,128l-75.475,75.475c-2.5,2.5-2.5,6.551,0,9.051  c1.25,1.25,2.888,1.875,4.525,1.875s3.275-0.625,4.525-1.875L128,137.051l75.475,75.475c1.25,1.25,2.888,1.875,4.525,1.875  s3.275-0.625,4.525-1.875c2.5-2.5,2.5-6.551,0-9.051L137.051,128z" />
-            </svg>
-        </button>
-        <div class="side-nav">
-            <h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-account-icon" viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clip-rule="evenodd"></path>
-                </svg>
-                <span>Sign In</span>
-            </h3>
-            <div class="side-menu-container">
-                <ul class="side-menu">
-                    <li class="mob-nav"><a href="./index.html">Home</a></li>
-                    <li class="mob-nav"><a href="./about.html">About Us</a></li>
-                    <li class="mob-nav"><a href="./brands.html">Brands</a></li>
-                    <li class="mob-nav"><a href="./products.html">Products</a></li>
-                    <li class="mob-nav"><a href="./services.html">Services</a></li>
-                    <li class="mob-nav"><a href="#">New Releases</a></li>
-                    <li class="side-menu-option">
-                        <span>
-                            Shop by Category
-                            <span><i class="fas fa-chevron-right"></i></span>
-                        </span>
-                        <ul class="sub-side-menu">
-                            <span class="side-menu-back-btn">
-                                <i class="fas fa-arrow-left"></i>
-                                Main Menu
-                            </span>
-                            <li><a href="./laser-engravers.html">Laser Engravers</a></li>
-                            <li><a href="./3d-printer.html">3D Printer</a></li>
-                            <li><a href="./3d-scanner.html">3D Scanner</a></li>
-                            <li><a href="./3d-pen.html">3D Pen</a></li>
-                            <li><a href="./robotics.html">Robotics</a></li>
-                            <li><a href="./food-printers.html">Food Printers</a></li>
-                            <li><a href="./3d-consumables.html">3D Consumables</a></li>
-                            <li><a href="./accessories.html">Accessories</a></li>
-                            <li><a href="./spare-parts.html">Spare Parts</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Shop by Brands</a></li>
-                    <li><a href="#">Shop by Purpose</a></li>
-                    <li><a href="#">Shop by Technology</a></li>
-                    <li><a href="#">Shop Consumables</a></li>
-                    <li class="side-menu-option">
-                        <span>
-                            Our Offers
-                            <span><i class="fas fa-chevron-right"></i></span>
-                        </span>
-                        <ul class="sub-side-menu">
-                            <span class="side-menu-back-btn">
-                                <i class="fas fa-arrow-left"></i>
-                                Main Menu
-                            </span>
-                            <li><a href="#">Clearance</a></li>
-                            <li><a href="#">Sales</a></li>
-                            <li><a href="#">Refurbished</a></li>
-                        </ul>
-                    </li>
-                    <li class="side-menu-option">
-                        <span>
-                            Our Services
-                            <span><i class="fas fa-chevron-right"></i></span>
-                        </span>
-                        <ul class="sub-side-menu">
-                            <span class="side-menu-back-btn">
-                                <i class="fas fa-arrow-left"></i>
-                                Main Menu
-                            </span>
-                            <li><a href="#">Technical help</a></li>
-                            <li><a href="#">Steam Labs</a></li>
-                            <li><a href="#">Schedule a consultant</a></li>
-                            <li><a href="#">Sales services</a></li>
-                        </ul>
-                    </li>
-                    <li class="side-menu-option">
-                        <span>
-                            Browse
-                            <span><i class="fas fa-chevron-right"></i></span>
-                        </span>
-                        <ul class="sub-side-menu">
-                            <span class="side-menu-back-btn">
-                                <i class="fas fa-arrow-left"></i>
-                                Main Menu
-                            </span>
-                            <li><a href="#">Quick links</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Socials</a></li>
-                </ul>
-            </div>
+        <div class="main-nav-container">
+          <div class="logo-container">
+            <a href="./index.html"><img src="./asset/images/logo.png" /></a>
+          </div>
+          <ul class="main-nav">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./brands.html">BRANDS</a></li>
+            <li><a href="./products.html">PRODUCTS</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+          </ul>
         </div>
+        <div class="site-icon-container">
+          <div class="site-icon-wrapper search" tabindex="0">
+            <div class="icon">
+              <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Search for something" />
+              <div>
+                <span>Search&nbsp;</span><span>for&nbsp;</span
+                ><span>something...&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div class="site-icon-wrapper">
+            <a href="./user/sign-in.html">
+              <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+            </a>
+          </div>
+          <div class="site-icon-wrapper">
+            <a href="./shoppingcart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+          <div class="site-icon-wrapper">
+            <a href="">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <ul class="product-nav">
+        <li><a href="./laser-engravers.html">Laser Engravers</a></li>
+        <li><a href="./3d-printer.html">3D Printer</a></li>
+        <li><a href="./3d-scanner.html">3D Scanner</a></li>
+        <li><a href="./3d-pen.html">3D Pen</a></li>
+        <li><a href="./robotics.html">Robotics</a></li>
+        <li><a href="./food-printers.html">Food Printers</a></li>
+        <li><a href="./3d-consumables.html">3D Consumables</a></li>
+        <li><a href="./accessories.html">Accessories</a></li>
+        <li><a href="./spare-parts.html">Spare Parts</a></li>
+      </ul>
+      <div class="side-nav-overlay"></div>
+      <button class="close-side-nav">
+        <svg
+          enable-background="new 0 0 256 256"
+          id="Layer_1"
+          version="1.1"
+          viewBox="0 0 256 256"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path
+            d="M137.051,128l75.475-75.475c2.5-2.5,2.5-6.551,0-9.051s-6.551-2.5-9.051,0L128,118.949L52.525,43.475  c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.551,0,9.051L118.949,128l-75.475,75.475c-2.5,2.5-2.5,6.551,0,9.051  c1.25,1.25,2.888,1.875,4.525,1.875s3.275-0.625,4.525-1.875L128,137.051l75.475,75.475c1.25,1.25,2.888,1.875,4.525,1.875  s3.275-0.625,4.525-1.875c2.5-2.5,2.5-6.551,0-9.051L137.051,128z"
+          />
+        </svg>
+      </button>
+      <div class="side-nav">
+        <h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="hamburger-account-icon"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <span>Sign In</span>
+        </h3>
+        <div class="side-menu-container">
+          <ul class="side-menu">
+            <li class="mob-nav"><a href="./index.html">Home</a></li>
+            <li class="mob-nav"><a href="./about.html">About Us</a></li>
+            <li class="mob-nav"><a href="./brands.html">Brands</a></li>
+            <li class="mob-nav"><a href="./products.html">Products</a></li>
+            <li class="mob-nav"><a href="./services.html">Services</a></li>
+            <li class="mob-nav"><a href="#">New Releases</a></li>
+            <li class="side-menu-option">
+              <span>
+                Shop by Category
+                <span><i class="fas fa-chevron-right"></i></span>
+              </span>
+              <ul class="sub-side-menu">
+                <span class="side-menu-back-btn">
+                  <i class="fas fa-arrow-left"></i>
+                  Main Menu
+                </span>
+                <li><a href="./laser-engravers.html">Laser Engravers</a></li>
+                <li><a href="./3d-printer.html">3D Printer</a></li>
+                <li><a href="./3d-scanner.html">3D Scanner</a></li>
+                <li><a href="./3d-pen.html">3D Pen</a></li>
+                <li><a href="./robotics.html">Robotics</a></li>
+                <li><a href="./food-printers.html">Food Printers</a></li>
+                <li><a href="./3d-consumables.html">3D Consumables</a></li>
+                <li><a href="./accessories.html">Accessories</a></li>
+                <li><a href="./spare-parts.html">Spare Parts</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Shop by Brands</a></li>
+            <li><a href="#">Shop by Purpose</a></li>
+            <li><a href="#">Shop by Technology</a></li>
+            <li><a href="#">Shop Consumables</a></li>
+            <li class="side-menu-option">
+              <span>
+                Our Offers
+                <span><i class="fas fa-chevron-right"></i></span>
+              </span>
+              <ul class="sub-side-menu">
+                <span class="side-menu-back-btn">
+                  <i class="fas fa-arrow-left"></i>
+                  Main Menu
+                </span>
+                <li><a href="#">Clearance</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Refurbished</a></li>
+              </ul>
+            </li>
+            <li class="side-menu-option">
+              <span>
+                Our Services
+                <span><i class="fas fa-chevron-right"></i></span>
+              </span>
+              <ul class="sub-side-menu">
+                <span class="side-menu-back-btn">
+                  <i class="fas fa-arrow-left"></i>
+                  Main Menu
+                </span>
+                <li><a href="#">Technical help</a></li>
+                <li><a href="#">Steam Labs</a></li>
+                <li><a href="#">Schedule a consultant</a></li>
+                <li><a href="#">Sales services</a></li>
+              </ul>
+            </li>
+            <li class="side-menu-option">
+              <span>
+                Browse
+                <span><i class="fas fa-chevron-right"></i></span>
+              </span>
+              <ul class="sub-side-menu">
+                <span class="side-menu-back-btn">
+                  <i class="fas fa-arrow-left"></i>
+                  Main Menu
+                </span>
+                <li><a href="#">Quick links</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Socials</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
+    <main class="faq-container">
+      <div class="title-container">
+        <h1>FAQ</h1>
+      </div>
+      <div class="faq-wrapper">
+        <div class="page-info">
+          <p>
+            Get all your doubts and questions cleared by going through this FAQ page that answers all queries.We have segmented the questions according to their specifics to turn your activity effortless and less time consuming.
+          </p>
+        </div>
+        <button class="accordion">HOW DOES 3D PRINTING WORK ?</button>
+        <div class="panel">
+          <ul>
+            <li>
+              A digital 3D image created on a computer is analyzed and divided into layers, as if sliced horizontally
+            </li>
+            <li>
+              Each “slice” is produced in succession on the 3D printer, layering on top of each other to gradually produce a whole object
+            </li>
+            <li>
+              There are many different processes that can produce an object in this way, some involving liquid resin, powders or thermoplastic materials
+            </li>
+          </ul>
+        </div>
+  
+        <button class="accordion">WHAT IS AN .STL FILE ?</button>
+        <div class="panel">
+          <p>A stereolithography (stl) file is a format that provides 3D printers the blueprint to print a part. The .stl file is created as an export option in many 3D software applications such 3D Studio Max, Maya, Google Sketchup, and Blender.</p>
+        </div>
+  
+        <button class="accordion">HOW MUCH DOES A 3D PRINT COST ?</button>
+        <div class="panel">
+          <p>
+            <ul>
+              <li>
+                3D prints cost 10 cents per gram. The cost per gram is based on a variety of factors including time, labor, machine wear, and the estimated weight of the print (in grams).
+              </li>
+              <li>
+                3D prints are purchased with URos (Flex) at the Help Desk in Rettner 201.
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <button class="accordion">HOW LONG WILL IT TAKE TO PRINT ?</button>
+        <div class="panel">
+          <p>
+            Printing usually takes hours, not minutes, and can vary depending on the level of detail of the .stl file and other specifications. Larger, more precise models can take significantly longer to print than the same model reduced in size and precision.
+          </p>
+        </div>
+        
+        <button class="accordion">
+          HOW WILL I KNOW WHEN THE PRINT IS DONE ?
+        </button>
+        <div class="panel">
+          <p>
+            You will be notified via email once your print has been completed. You will also be notified if any problems occurred during the printing process that may need your attention.
+          </p>
+        </div>
+
+        <button class="accordion">
+          WHAT IS THE PROCESS FOR SUBMITTING MY FILE FOR PRINT ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              You can submit your 3D print request through our online submission form. Alternatively, save your .stl file to a flash drive and bring it to the Help Desk in Rettner 201. You must agree to the terms of use before your object will be printed.
+            </li>
+            <li>
+              3D print requests will be printed on a first come, first serve basis.
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          WHAT COLORS ARE AVAILABLE ?
+        </button>
+        <div class="panel">
+          <p>
+            We have filament available in white, green, and yellow. Each object can only be printed in one color.
+          </p>
+        </div>
+
+        <button class="accordion">
+          CAN I SUBMIT MORE THAN ONE FILE AT THE SAME TIME ?
+        </button>
+        <div class="panel">
+          <p>
+            Yes, you can.
+          </p>
+        </div>
+
+        <button class="accordion">
+          WHAT IS THE MAXIMUM FILE SIZE ?
+        </button>
+        <div class="panel">
+          <p>
+            The maximum .stl file size is 50MB.
+          </p>
+        </div>
+
+        <button class="accordion">
+          HOW LARGE CAN MY 3D MODEL BE ?
+        </button>
+        <div class="panel">
+          <p>
+            The maximum dimensions for a 3D model are 6” x 6” x 6” (152mm x 152 mm x 152 mm)
+          </p>
+        </div>
+
+        <button class="accordion">
+          WHAT IS THE MAXIMUM TIME ALLOTED FOR A PRINT ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              The 3D printers can only be operated and monitored during business hours. Therefore, prints that will exceed business hours will not be printed. The customer will be notified as to what changes could be made to reduce the print time.
+            </li>
+            <li>
+              We’ve been working with 3D printing for many years, and over that time we’ve received many questions from those interested in the technology. These questions tend to fall in similar patterns, so we’ve collected the most popular questions about 3D printing in one place for you.
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          HOW BIG AN OBJECT CAN I 3D PRINT ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              It depends on the specific 3D printer you are using. Each has a maximum build volume
+            </li>
+            <li>
+              Typical maximum size for desktop 3D printers: 150-300mm per side
+            </li>
+            <li>
+              Large prints typically take a VERY LONG TIME to complete, often hours or even days
+            </li>
+            <li>
+              Large 3D models can be split into pieces, printed and assembled into a larger object if they don’t fit into a specific 3D printer
+            </li>
+            <li>
+              Industrial 3D printers can handle much larger sizes – but they are very expensive
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          WHICH MATERIALS CAN BE 3D PRINTED ? CAN I PRINT IN RANDOM MATERIAL ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>Personal 3D printers typically support PLA and ABS plastics or similar plastics</li>
+            <li>PLA is biodegradable and made from corn, but is brittle</li>
+            <li>ABS is made from petroleum and is strong</li>
+            <li>
+              Other experimental materials are possible, such as mixing wood, nylon or metal particles into PLA plastic and certain plastics such as nylon, HIPS and others
+            </li>
+            <li>
+              Certain new professional 3D printers offer higher temperature build chambers, where more exotic high-temp materials such as PEEK, ULTEM, PAEK can be used
+            </li>
+            <li>
+              Food paste and other squishy substances can be 3D printed with specialized 3D printers equipped with syringes
+            </li>
+            <li>
+              Industrial 3D printers can print in sand, ceramics or metals, but are very expensive
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          WHAT SOFTWARE DO I NEED TO USE A 3D PRINTER ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              Each 3D printer includes software to drive the printer itself. Types vary by manufacturer, but there are some commonly used open source systems that work on most machines, as well as a couple of pay-for third party tools
+            </li>
+            <li>
+              If you're designing your own 3D Models, you need a 3D CAD (computer aided design) program, like Autodesk 123D, SolidWorks or any of many others. Note that some are extremely expensive to purchase, others are available at no charge
+            </li>
+            <li>
+              CAD programs frequently specialize in a type of design: mechanical parts, artistic shapes, architecture, etc. There are dozens of 3D CAD programs; choose one that best meets your budget, skill level and design goal
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          WHERE CAN I GET A 3D MODEL PRINTED ? I DON’T WANT TO OWN A 3D PRINTER ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              Several popular consumer-oriented 3D print services can be considered: i.materialise, Shapeways, Sculpteo and others
+            </li>
+            <li>
+              Each presents models you can choose from, or you can upload your own design for printing
+            </li>
+            <li>
+              Many commercial 3D print services focus on industrial part production, and often include post processing services beyond the printing stage
+            </li>
+            <li>
+              Depending on the type of application and materials required, you must choose a service provider carefully
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          CAN I 3D PRINT MY DINNER ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              No. Well, maybe. Certain 3D printers are capable of extruding food paste (melted chocolate, peanut butter, minced meat, squeezable cheese, etc), but like any other 3D printer they are very slow and you will starve while waiting for completion
+            </li>
+            <li>
+              In general personal 3D printers and their prints are NOT FOODSAFE. For example, you should never drink from a 3D printed cup unless it is ceramic, since the tiny layers can harbor bacteria, even after washing
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          CAN I 3D PRINT A HOUSE ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              Not really. There are several new ventures working on this, but in virtually all cases they are simply 3D printing the concrete walls of the structure
+            </li>
+            <li>
+              The remainder of the building, including plumbing, HVAC, windows, roofing, exterior cladding, interior surfaces, electrical and other finishings are all done using conventional techniques
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          WHERE CAN I BUY A 3D PRINTER ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              Virtually all manufacturers of desktop equipment offer online sales from their websites.Some local and regional resellers exist. Larger commercial equipment is typically sold through local resellers
+            </li>
+            <li>
+              Certain popular brands are sold in large chains (Staples and Home Depot in USA, for example)
+            </li>
+            <li>
+              Large cities may have dedicated 3D printer retail stores (iMakr in London, for example)
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">
+          WHAT 3D PRINTER SHOULD I BUY ?
+        </button>
+        <div class="panel">
+          <ul>
+            <li>
+              It depends entirely on your budget, your technical ability, the materials required, and type of object being printed. It’s not ever an obvious decision
+            </li>
+            <li>
+              Ultra-low cost units (less than USD$500) are best used by hobbyists who wish to tinker with the device
+            </li>
+            <li>
+              Moderate level units (USD$500-2000) are best for less experienced consumers
+            </li>
+            <li>
+              Higher priced units are targeted at professionals or industry
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </main>
     <footer>
-        <div class="inp-container">
-            <div class="newsletter-inp">
-                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                <input />
-                <button>SUBSCRIBE</button>
-            </div>
-            <div class="track-order-inp">
-                <h4>TRACK YOUR ORDER</h4>
-                <input />
-                <button>TRACK MY ORDER</button>
-            </div>
+      <div class="inp-container">
+        <div class="newsletter-inp">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <input />
+          <button>SUBSCRIBE</button>
         </div>
-        <div class="footer-cover">
-            <div class="footer-item-wrapper">
-                <section class="usp-section">
-                    <div class="footer-logo-container">
-                        <img src="./asset/images/logo.png" alt="site logo" />
-                    </div>
-                    <div class="usp-img-container">
-                        <div class="usp-img-wrapper">
-                            <img src="./asset/images/usp1.png" />
-                        </div>
-                        <div class="usp-img-wrapper">
-                            <img src="./asset/images/usp2.png" />
-                        </div>
-                        <div class="usp-img-wrapper">
-                            <img src="./asset/images/usp3.png" />
-                        </div>
-                    </div>
-                </section>
-                <section class="about-section">
-                    <div class="about-text">
-                        <p>
-                            As 3idea, we're the fastest-growing distributor of cutting-edge technology products in India. We
-                            simplify the crowded market, offering the best products at the most competitive prices and
-                            partnering with major institutions, e-commerce sites, and a strong sub-dealer and warehouse
-                            network to increase brand visibility. Backed by a listed manufacturing group, we have the
-                            experience and edge to quickly scale up the Indian market.
-                        </p>
-                    </div>
-                </section>
-                <div class="footer-nav">
-                    <div class="quick-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li>
-                                <a href="./about.html">About Us</a>
-                            </li>
-                            <li>
-                                <a href="./contact.html">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    Blogs
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="policies">
-                        <h3>Policies</h3>
-                        <ul>
-                            <li>
-                                <a href="./term-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="./privacy-policy.html">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./faq.html">
-                                    FAQs
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="payment-options">
-                        <h3>Secure payment options</h3>
-                        <ul>
-                            <li>
-                                <a>
-                                    <img src="./asset/images/master-card.png" alt="master card" />
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="./asset/images/discover.png" alt="discover" />
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <img src="./asset/images/visa.png" alt="visa" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contact">
-                        <h3>Reach out for support</h3>
-                        <div>
-                            <div>
-                                <span>Email</span>
-                                <span>Tel</span>
-                                <span>Location</span>
-                            </div>
-                            <ul>
-                                <li>
-                                    sales@3idea.in
-                                </li>
-                                <li>
-                                    (+91)-836-994-6747
-                                </li>
-                                <li>
-                                    +022 66824647
-                                </li>
-                                <li>
-                                    Lower Parel West, Mumbai, Maharashtra
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="track-order-inp">
+          <h4>TRACK YOUR ORDER</h4>
+          <input />
+          <button>TRACK MY ORDER</button>
+        </div>
+      </div>
+      <div class="footer-cover">
+        <div class="footer-item-wrapper">
+          <section class="usp-section">
+            <div class="footer-logo-container">
+              <img src="./asset/images/logo.png" alt="site logo" />
+            </div>
+            <div class="usp-img-container">
+              <div class="usp-img-wrapper">
+                <img src="./asset/images/usp1.png" />
+              </div>
+              <div class="usp-img-wrapper">
+                <img src="./asset/images/usp2.png" />
+              </div>
+              <div class="usp-img-wrapper">
+                <img src="./asset/images/usp3.png" />
+              </div>
+            </div>
+          </section>
+          <section class="about-section">
+            <div class="about-text">
+              <p>
+                As 3idea, we're the fastest-growing distributor of cutting-edge
+                technology products in India. We simplify the crowded market,
+                offering the best products at the most competitive prices and
+                partnering with major institutions, e-commerce sites, and a
+                strong sub-dealer and warehouse network to increase brand
+                visibility. Backed by a listed manufacturing group, we have the
+                experience and edge to quickly scale up the Indian market.
+              </p>
+            </div>
+          </section>
+          <div class="footer-nav">
+            <div class="quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="./about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./contact.html"> Contact Us </a>
+                </li>
+                <li>
+                  <a> Blogs </a>
+                </li>
+              </ul>
+            </div>
+            <div class="policies">
+              <h3>Policies</h3>
+              <ul>
+                <li>
+                  <a href="./term-conditions.html">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="./privacy-policy.html"> Privacy Policy </a>
+                </li>
+                <li>
+                  <a href="./faq.html"> FAQs </a>
+                </li>
+              </ul>
+            </div>
+            <div class="payment-options">
+              <h3>Secure payment options</h3>
+              <ul>
+                <li>
+                  <a>
+                    <img
+                      src="./asset/images/master-card.png"
+                      alt="master card"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <img src="./asset/images/discover.png" alt="discover" />
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <img src="./asset/images/visa.png" alt="visa" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h3>Reach out for support</h3>
+              <div>
+                <div>
+                  <span>Email</span>
+                  <span>Tel</span>
+                  <span>Location</span>
                 </div>
+                <ul>
+                  <li>sales@3idea.in</li>
+                  <li>(+91)-836-994-6747</li>
+                  <li>+022 66824647</li>
+                  <li>Lower Parel West, Mumbai, Maharashtra</li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="copyright-section">
-            Copyright &copy; 2023 3idea Technology All Right Reserved
-        </div>
+      </div>
+      <div class="copyright-section">
+        Copyright &copy; 2023 3idea Technology All Right Reserved
+      </div>
     </footer>
     <script src="./js/header.js"></script>
-</body>
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+      accordions.forEach((accordion, index) => {
+        accordion.addEventListener("click", (e) => {
+          accordion.classList.toggle("active");
+          const panel = accordion.nextElementSibling;
+          if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } 
+          else{
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        })
+      })
+    </script>
+  </body>
 </html>

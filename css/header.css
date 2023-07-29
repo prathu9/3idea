@@ -447,6 +447,11 @@ header .product-nav li a.active{
   nav .site-icon-container{
     margin-right: 0;
   }
+  nav .site-icon-wrapper.search{
+    top: 50px;
+    right: -10px;
+    width: 94vw;
+  }
   nav .main-nav{
     display: none;
   }

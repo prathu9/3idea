@@ -68,7 +68,8 @@
 
 .my_profile,
 .wishlist,
-.addresses{
+.addresses,
+.orders-container{
     flex: 1;
     width: auto;
     height: 500px;
@@ -178,6 +179,37 @@
     opacity: 1;
 }
 
+/*Orders page*/
+.orders-container .shop-table th span{
+    display: inline-block;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.orders-container .shop-table th:nth-of-type(1) span{
+    width: 180px;
+}
+
+.order-status .attempted{
+    color: #ffa500;
+}
+.order-status .fail{
+    color: #ff0000;
+}
+.order-status .success{
+    color: #1d7b2f
+}
+
+.order-date span{
+    width: 150px;
+}
+
+.order-details,
+.order-tracking{
+    font-size: 14px;
+    color: #5366c4;
+}
+
 /*Wishlist page*/
 .shop-table{
     width: 85%;
@@ -225,7 +257,6 @@
 .product-name a:hover {
     color: #26b;
 }
-
 
 /*Addresses page*/
 .addresses-wrapper p{
@@ -344,20 +375,23 @@
     .profile-wrapper > ul,
     .my_profile,
     .wishlist,
-    .addresses{
+    .addresses,
+    .orders-container{
         width: 100%;
     }
 
     .my_profile,
     .wishlist,
-    .addresses{
+    .addresses,
+    .orders-container{
         flex-flow: column nowrap;
+        padding: 5px;
     }
 
     .shop-table thead {
         display: none;
     }
-
+    
     .shop-table tbody, 
     .shop-table tr, 
     .shop-table td {
@@ -381,6 +415,10 @@
         margin-bottom: 10px;
     }
 
+    .shop-table img {
+        width: 100%;
+    }
+
     .shop-table .product-thumbnail a, 
     .shop-table .btn-product, 
     .shop-table td {
@@ -392,7 +430,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .addresses,
     .addresses-detail > *{
         padding:0;

@@ -1,0 +1,282 @@
+.title-container{
+    margin: 0 0 50px 0;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #222;
+}
+
+.profile-wrapper{
+    max-width: 1220px;
+    margin: 40px auto;
+    display: flex;
+    padding: 0 20px;
+}
+
+.profile-wrapper > ul{
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 27.8%;
+    border: 0;
+    border-right: 2px solid #ebebeb;
+}
+
+.profile-wrapper > ul > li{
+    border-bottom: 1px solid #eee;
+    list-style-type: none;
+}
+
+.profile-wrapper > ul > li a{
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    display: block;
+    padding: 14px 2px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1;
+    text-transform: none;
+}
+
+.profile-wrapper > ul > li.active a{ 
+    padding-left: 22px;
+    color: #26b;
+}
+
+.profile-wrapper > ul > li a:before{
+    content: "\2192";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    font-family: "Donald";
+    font-size: 14px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+.profile-wrapper > ul > li.active a:before{
+    visibility: visible;
+    opacity: 1;
+}
+
+.my_profile,
+.wishlist{
+    flex: 1;
+    width: auto;
+    height: 500px;
+    overflow: scroll;
+    padding: 20px;
+}
+
+
+/*my profile*/
+.my_profile form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my_profile form .input-wrapper{
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.my_profile form .input-wrapper:nth-of-type(1){
+    padding-right: 10px;
+}
+
+.my_profile form .input-wrapper:nth-of-type(2){
+    padding-left: 10px;
+}
+
+.my_profile label{
+    display: block;
+    padding-left: 2px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.my_profile .form-input{
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    padding: 8.5px 20px;
+    border: 1px solid #e3e3e3;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #666;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    font-family: Poppins, sans-serif;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.my_profile .form-input:not(:focus) {
+    background-color: #f6f7f9;
+}
+
+.my_profile .submit-btn{
+    color: #fff;
+    border-color: #26b;
+    background-color: #26b;
+    display: inline-block;
+    outline: 0;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.25px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 150px;
+    transition: width 0.3s ease-in;
+}
+
+.my_profile .submit-btn:hover{
+    width: 180px;
+}
+
+.my_profile .submit-btn i{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 10px;
+}
+
+.my_profile .submit-btn i:after{
+    content: "\2192";
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    font-family: "Donald";
+    font-size: 14px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.my_profile .submit-btn:hover i:after{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Wishlist*/
+.shop-table{
+    width: 85%;
+    margin: 0px auto;
+    border-collapse: collapse;
+    border-color: grey;
+}
+
+.shop-table th,
+.shop-table td{
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.shop-table th{
+    padding: 3px 0 3px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.875;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.shop-table td{
+    padding: 15px 10px 15px 10px;
+}
+
+.shop-table .product-thumbnail a {
+    display: block;
+    width: 100px;
+}
+
+.shop-table img {
+    display: block;
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.shop-table a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.product-name a:hover {
+    color: #26b;
+}
+
+@media screen and (max-width: 767px){
+    .profile-wrapper{
+        flex-flow: column nowrap;
+    }
+
+    .profile-wrapper > ul,
+    .my_profile,
+    .wishlist{
+        width: 100%;
+    }
+
+    .my_profile,
+    .wishlist{
+        flex-flow: column nowrap;
+    }
+
+    .shop-table thead {
+        display: none;
+    }
+
+    .shop-table tbody, 
+    .shop-table tr, 
+    .shop-table td {
+        display: block;
+    }
+
+    .shop-table tbody {
+        border: 1px solid #e1e1e1;
+    }
+
+    .shop-table tr {
+        position: relative;
+        padding: 42px 0 40px;
+    }
+
+    .shop-table tr th, .shop-table tr td {
+        border: none;
+    }
+
+    .shop-table .product-thumbnail {
+        margin-bottom: 10px;
+    }
+
+    .shop-table .product-thumbnail a, 
+    .shop-table .btn-product, 
+    .shop-table td {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .shop-table .product-thumbnail a, .shop-table .btn-product, .shop-table td {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

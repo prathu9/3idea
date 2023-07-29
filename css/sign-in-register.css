@@ -31,12 +31,12 @@
     display: block;
 }
 
-.form-container form label{
+.form-container form label:not(label[for="signin-remember"]){
     display: block;
     margin: 0 0 10px 0;
 }
 
-.form-container form input{
+.form-container form input:not(input[type="checkbox"]){
     display: block;
     margin: 0 0 20px 0;
     padding: 10px 18px;
@@ -44,6 +44,28 @@
     width: 100%;
     height: 45px;
     outline: none;
+}
+
+.form-opt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.checkbox-wrapper{
+    font-size: 12px;
+}
+
+.form-opt a{
+    text-align: right;
+    color: #d26e4b;
+    text-decoration: none;
+}
+
+.form-opt a:hover{
+    text-decoration: underline;
 }
 
 .form-container form button{
@@ -55,4 +77,10 @@
     background-color: #2266bb;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:450px){
+    .form-container{
+        width: 95%;
+    }
 }

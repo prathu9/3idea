@@ -24,7 +24,13 @@
   margin: 0 auto;
   width: 450px;
   height: 500px;
-  background-color: #cecece;
+  background-color: #fff;
+}
+
+.product-img-container .product-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .img-carousel {
@@ -71,7 +77,18 @@
   object-fit: cover;
   width: 120px;
   height: 90px;
+  border-radius: 8px;
+  border: 1px solid #000;
   background-color: #aaaaaa;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.swiper-slide .slide-item-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #fff;
 }
 
 .swiper-button-next,

@@ -102,3 +102,50 @@
         }
     });
 })(); /* IIFE end */
+
+(function(){
+    const swiper5 = new Swiper(".cover-swiper", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+            delay: 12000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination5',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '#js-next5',
+            prevEl: '#js-prev5',
+        },
+    })
+
+    function getFirstChild(el){
+        var firstChild = el.firstChild;
+        while(firstChild != null && firstChild.nodeType == 3){ 
+          firstChild = firstChild.nextSibling;
+        }
+        return firstChild;
+      }
+
+    const cloneAndReplaceNode = (elem) => {
+        const newone = elem.cloneNode(true);
+        elem.parentNode.replaceChild(newone, elem);
+    }
+
+    swiper5.on("slideChange", () => {
+        const coverBox = document.querySelector(".cover-carousel .cover-container");
+        const currentActiveIndex = swiper5.realIndex;
+        const currentSlide = swiper5.slides[currentActiveIndex];
+        const firstChild = getFirstChild(currentSlide);
+        currentSlide.removeChild(firstChild);
+        const coverClone = coverBox.cloneNode(true);
+        currentSlide.insertBefore(coverClone, currentSlide.firstChild);
+        cloneAndReplaceNode(currentSlide.querySelector(".cover-title"));
+        cloneAndReplaceNode(currentSlide.querySelector(".cover-img"));
+    })
+})();

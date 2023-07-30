@@ -215,8 +215,38 @@
     /* text-overflow: ellipsis; */
 }
 
+.checkout-info{
+    padding: 15px 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-family: Poppins, sans-serif;
+}
+
 .order-table table tr:last-child{
     height: 80px;
+}
+
+.place-order-btn{
+    display: inline-block;
+    outline: 0;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.25px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    border-color: #222;
+    background-color: #222;
 }
 
 @media screen and (max-width: 992px){

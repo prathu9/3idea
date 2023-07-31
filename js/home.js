@@ -88,10 +88,6 @@
             delay: 1000,
             disableOnInteraction: false
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
         breakpoints: {
             240:{
                 slidesPerView: 2,

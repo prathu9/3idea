@@ -72,7 +72,7 @@
   z-index: 15;
   visibility: hidden;
   opacity: 0;
-  animation: fadeIn 550ms 1s ease-in forwards, slideLeft 850ms 1.5s ease-out forwards, fadeOut 1s 14s ease-out forwards;
+  animation: fadeIn 550ms 1s ease-in forwards, slideLeft 850ms 1s ease-out forwards, fadeOut 1s 14s ease-out forwards;
 }
 
 @keyframes slideLeft{

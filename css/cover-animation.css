@@ -14,7 +14,7 @@
   display: flex;
   opacity: 0;
   visibility: hidden;
-  animation: fadeIn 1s 200ms ease-in forwards, fadeOut 1s 11s ease-out forwards;
+  animation: fadeIn 1s 200ms ease-in forwards, fadeOut 1s 14s ease-out forwards;
 }
 
 @keyframes fadeIn{
@@ -47,7 +47,7 @@
   transform: translate(-20%, 120%);
   visibility: hidden;
   opacity: 0;
-  animation: fadeIn 550ms 1.5s ease-in forwards, slideUp 850ms 1.5s ease-out forwards, fadeOut 1s 11s ease-out forwards;
+  animation: fadeIn 550ms 1.5s ease-in forwards, slideUp 850ms 1.5s ease-out forwards, fadeOut 1s 14s ease-out forwards;
 }
 
 @keyframes slideUp{
@@ -72,7 +72,7 @@
   z-index: 15;
   visibility: hidden;
   opacity: 0;
-  animation: fadeIn 550ms 1.5s ease-in forwards, slideLeft 850ms 1.5s ease-out forwards, fadeOut 1s 11s ease-out forwards;
+  animation: fadeIn 550ms 1s ease-in forwards, slideLeft 850ms 1.5s ease-out forwards, fadeOut 1s 14s ease-out forwards;
 }
 
 @keyframes slideLeft{

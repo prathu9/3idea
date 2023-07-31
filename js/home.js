@@ -111,7 +111,7 @@
         loop: true,
         loopFillGroupWithBlank: true,
         autoplay: {
-            delay: 12000,
+            delay: 15000,
             disableOnInteraction: false
         },
         pagination: {
@@ -138,13 +138,9 @@
     }
 
     swiper5.on("slideChange", () => {
-        const coverBox = document.querySelector(".cover-carousel .cover-container");
         const currentActiveIndex = swiper5.realIndex;
         const currentSlide = swiper5.slides[currentActiveIndex];
-        const firstChild = getFirstChild(currentSlide);
-        currentSlide.removeChild(firstChild);
-        const coverClone = coverBox.cloneNode(true);
-        currentSlide.insertBefore(coverClone, currentSlide.firstChild);
+        cloneAndReplaceNode(currentSlide.querySelector(".cover-container"));
         cloneAndReplaceNode(currentSlide.querySelector(".cover-title"));
         cloneAndReplaceNode(currentSlide.querySelector(".cover-img"));
     })

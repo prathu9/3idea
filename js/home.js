@@ -84,6 +84,8 @@
     const swiper3 = new Swiper(".mySwiper3", {
         slidesPerView: 3,
         spaceBetween: 0,
+        loop: true,
+        loopFillGroupWithBlank: true,
         autoplay: {
             delay: 1000,
             disableOnInteraction: false

@@ -37,11 +37,12 @@
 }
 
 .category-container .filter-icon,
-.Consumables-container .filter-icon{
+.consumables-container .filter-icon{
   display: none;
-  margin: 20px 0;
+  margin: 20px;
   position: relative;
   z-index: 5;
+  text-align: right;
 }
 
 
@@ -125,7 +126,7 @@
   }
 
   .category-container .filter-icon,
-  .Consumables-container .filter-icon{
+  .consumables-container .filter-icon{
     display: block;
     cursor: pointer;
   }

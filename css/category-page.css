@@ -110,9 +110,24 @@ main {
   display: block;
 }
 
+.best-seller-section .best-seller .product-name,
+.new-release-opt .product-name{
+  padding: 5px 0 0 5px;
+  max-width: 165px;
+}
+
+.best-seller .opt-img .product-name span,
+.new-release-opt .opt-img .product-name span{
+  width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
 .best-seller-section .best-seller .opt-img-detail,
 .new-release-opt .opt-img-detail {
-  margin: 5px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
